@@ -1,0 +1,148 @@
+section
+	.banner
+		.container
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					h1.title 100% Online Car Purchasing
+						span Canadas New Way to Buy a Car
+					form.filters.filters-banner
+						h2.title Search Thousands of Cars, Trucks, Suv’s in Ontario
+						.left-block
+							.select.ic-make
+								select#make(name='Make')
+									option(value='hide') Make
+									option(value='acura') Acura
+									option(value='audi') Audi
+									option(value='bmw') BMW
+									option(value='fiat') Fiat
+									option(value='ford') Ford
+									option(value='honda') Honda
+									option(value='hyundai') Hyundai
+									option(value='jaguar') Jaguar
+									option(value='land-rover') Land Rover
+									option(value='maserati') Maserati
+									option(value='mazda') Mazda
+									option(value='mercedes-benz') Mercedes-Benz
+									option(value='mitsubishi') Mitsubishi
+									option(value='porsche') Porsche
+									option(value='tesla') Tesla
+									option(value='toyota') Toyota
+									option(value='volkswagen') Volkswagen
+									option(value='volvo') Volvo
+							.select.ic-model
+								select#model(name='Model')
+									option(value='hide') Model
+									option(value='2-series') 2 Series
+									option(value='3-series') 3 Series
+									option(value='4-series') 4 Series
+									option(value='4-series-gran-coupe') 4-Series Gran Coupe
+									option(value='5-series') 5-Series
+									option(value='500') 500
+									option(value='a3') A3
+									option(value='a4') A4
+									option(value='a5') A5
+									option(value='a7') A7
+									option(value='accord') Accord
+									option(value='c-class') C-Class
+									option(value='cayenne') Cayenne
+									option(value='corolla') Corolla
+									option(value='f-pace') F-Pace
+									option(value='ghibli') Ghibli
+									option(value='gti') GTI
+									option(value='lancer') Lancer
+									option(value='macan') Macan
+									option(value='mazda3') MAZDA3
+									option(value='model-s') Model S
+									option(value='mustang') Mustang
+									option(value='q5') Q5
+									option(value='range-rover') Range Rover
+									option(value='range-rover-evoque') Range Rover Evoque
+									option(value='range-rover-sport') Range Rover Sport
+									option(value='s5') S5
+									option(value='tiguan') Tiguan
+									option(value='tlx') TLX
+									option(value='tucson') Tucson
+									option(value='x3') X3
+									option(value='x4') X4
+									option(value='x5') X5
+									option(value='xc90') XC90
+							.select.ic-calendar
+								select#year(name='Year')
+									option(value='hide') Year
+									option(value='2014') 2014
+									option(value='2015') 2015
+									option(value='2016') 2016
+									option(value='2017') 2017
+									option(value='2018') 2018
+									option(value='2019') 2019
+									option(value='2020') 2020
+							.input.ic-location
+								input(type="text" placeholder="Enter a location")
+							.hidden-filters
+								.select-range.ic-price
+									p Price
+									.range-wrapper
+										.range-slider
+											input.js-range-slider(type='text' value='' data-min='0' data-postfix='$' data-max='100000' data-step='5000')
+										.extra-controls.form-inline
+											.form-group
+												input.js-input-from.form-control(type='text' value='0')
+												input.js-input-to.form-control(type='text' value='0')
+								.select.ic-body-type
+									select#body-type(name='Body Type')
+										option(value='hide') Body Type
+										option(value='Truck') Truck
+										option(value='Suv') Suv
+										option(value='Van') Van
+										option(value='Sedan') Sedan
+										option(value='Coupe') Coupe
+								.select.ic-fuel
+									select#fuel(name='fuel')
+										option(value='hide') Fuel type
+										option(value='diesel') Diesel
+										option(value='electric') Electric
+										option(value='gas') Gas
+								.select.ic-exterior
+									select#exterior-color(name='exterior-color')
+										option(value='hide')  Exterior Color
+										option(value='black') Black
+										option(value='blue') Blue
+										option(value='brown') Brown
+										option(value='dark-blue') Dark Blue
+										option(value='dark-grey') Dark Grey
+										option(value='gray') Gray
+										option(value='red') Red
+										option(value='silver') Silver
+										option(value='white') White
+								.select.ic-engine
+									select#engine(name='engine')
+										option(value='hide')  Engine
+										option(value='1-4-l') 1.4 L
+										option(value='1-8-l') 1.8 L
+										option(value='2-l') 2 L
+										option(value='2-5-l') 2.5 L
+										option(value='3-l') 3 L
+										option(value='3-5-l') 3.5 L
+										option(value='3-6-l') 3.6 L
+										option(value='5-l') 5 L
+								.select.ic-interior
+									select#interior-color(name='interior-color')
+										option(value='')  Interior Color
+										option(value='black') Black
+										option(value='brown') Brown
+										option(value='cream') Cream
+										option(value='gray') Gray
+										option(value='grey') Grey
+										option(value='red') Red
+										option(value='tan') Tan
+						.right-block
+							button.ic-search.jwa_button.filter-button(type="submit") Search
+							button.ic-reset(type="reset") Reset
+						a.show-filters(href="#") Show advanced filters
+						.sefety
+							img(src='img/shield.png' alt='')
+							p
+								strong Safety First
+								| . All cars are fully disinfected and sanitized before delivery.
+								a(href='/about-us/') Learn more about
+								| what we do.

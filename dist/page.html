@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Pug Page</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick-theme.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/select2.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/presets/style-5.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+      .top-head:after{
+      	background-image: -webkit-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	background-image: -ms-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	content: '';
+      	display: block;
+      	position: absolute;
+      	left: 0px;
+      	top: 40px;
+      	width: 100%;
+      	height: 70px;
+      	z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr">
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">ONLINE FINANCING</a></li>
+                </ul><a class="tel dfr icon-phone" href="tel:+1 866-416-6240">+1 866-416-6240</a>
+                <ul class="soc dfr">
+                  <li class="icon-facebook"><a href="#">facebook</a></li>
+                  <li class="icon-twitter"><a href="#">twitter</a></li>
+                  <li class="icon-instagram"><a href="#">instagram</a></li>
+                  <li class="icon-linkedin"><a href="#">linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr"><a class="logo" href="#">
+                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 223 29">
+                    <path class="st1" d="M6.6,17.2v-4.9c0-3.7,3-6.7,6.7-6.7h0.7L16.3,0h-4.8C5.1,0,0,5.2,0,11.5v5.8c0,6.3,5.1,11.4,11.4,11.4h12.1								v-4.9H13.3C9.6,23.9,6.6,20.9,6.6,17.2z"></path>
+                    <path class="st1" d="M19.4,0l-2.3,5.6h4.5L23.8,0H19.4z"></path>
+                    <path class="st1" d="M29.4,0H27l-2.3,5.6h4.8h2.3L34.1,0H29.4z"></path>
+                    <path class="st2" d="M16.9,18.4l0.4-0.7l2.9-5l2.8-4.8c0.1-0.2-0.2-0.4-0.3-0.3L18,10.7l-4.8,3.2l-0.6,0.4c0,0-0.1,0.1-0.1,0.1								c-1,1-0.8,2.8,0.4,3.9c1.2,1.1,3,1.2,3.9,0.2C16.8,18.5,16.8,18.4,16.9,18.4z"></path>
+                    <path class="st1" d="M44.4,0H38l-2.4,5.7H41l4.3,11h-8.5H31l-5,12h6.3l2.6-6.8h12.4l2.6,6.8h6.7L44.4,0z"></path>
+                    <path class="st2" d="M105.8,0h5.4v28.8h-3.4v0L92.8,9.4v19.4h-5.4V0h4.4l14.1,17.8L105.8,0L105.8,0z"></path>
+                    <path class="st2" d="M166.9,0h5.4v28.8H169v0L153.9,9.4v19.4h-5.4V0h4.4l14.1,17.8L166.9,0L166.9,0z"></path>
+                    <path class="st2" d="M132.8,0h-5.9l-2.7,6h5.7l5.3,12.2h-10.7h-5.8L114,28.8h5.9l2.5-5.4h15l2.4,5.4h5.9L132.8,0z"></path>
+                    <path class="st2" d="M206.9,17h15.5v-5.1h-15.5h-5.4c0,5.6,0,11.3,0,16.9H223v-5.3h-16.1L206.9,17L206.9,17z"></path>
+                    <path class="st2" d="M201.5,0.1c0,1.8,0,3.5,0,5.3h5.4H223V0.1H201.5z"></path>
+                    <path class="st1" d="M77.7,16.8c2-0.5,3.5-1.4,4.4-2.9c0.9-1.5,1.4-3.2,1.4-5.2c0-0.2,0-0.4,0-0.6c0-0.2,0-0.4,0-0.6								c-0.1-1-0.3-1.9-0.7-2.9c-0.4-0.9-0.9-1.7-1.6-2.4c-0.8-0.8-1.7-1.3-2.8-1.6c-1.1-0.3-2.1-0.5-3.2-0.5c-0.3,0-0.6,0-0.9,0								c-0.3,0-0.6,0-0.9,0H58.6v5.1h6H72v0c1.4,0,2.6,0.2,3.7,0.5c1.1,0.3,1.7,1.4,1.7,3.1c0,1.7-0.5,2.7-1.5,3.1								c-1.1,0.4-2.2,0.6-3.5,0.6c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0h-7.4h-6v16.3h6V17.4h7.1L78,28.7h6.8L77.7,16.8z"></path>
+                    <path class="st2" d="M183.2,7.9c-0.9,1.9-1.3,4.1-1.4,6.6c0,0.4,0,0.9,0,1.3s0,0.9,0,1.3c0.1,0.9,0.3,1.8,0.5,2.7								c0.3,0.9,0.7,1.7,1.3,2.4c0.6,0.7,1.4,1.2,2.2,1.3c0.8,0.2,1.7,0.3,2.6,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0l9.9,0v5h-10.2								c-1.6,0-3.2-0.1-4.7-0.4c-1.5-0.3-2.9-1-4.2-2c-1.6-1.3-2.7-2.9-3.4-4.8c-0.6-1.9-1-3.8-1-5.8c0-0.4,0-0.8,0-1.2								c0-0.4,0-0.8,0.1-1.2c0.3-4.5,1.5-7.9,3.7-10c2.2-2.1,5.4-3.2,9.8-3.2l10,0V5h-9.9C185.9,5,184,6,183.2,7.9z"></path>
+                  </svg></a>
+                <div class="burger"><span></span><span></span><span></span></div>
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">Online Financing</a></li>
+                  <li class="button"><a href="#">Get Pre-Approved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="banner-mini" style="background-image:url(img/title-box-default-bg.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="title">SEARCH FOR YOUR NEXT CAR</h1>
+              <div class="breadcrumbs"><span><a class="home" href="#"><span property="name">Carnance</span></a></span><span><span>SEARCH FOR YOUR NEXT CAR</span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">
+            <form class="filters left-sidebar">
+              <div class="filters-result dfr">
+                <p>12 filters</p><a class="clear-all">Clear All</a>
+              </div>
+              <hr class="sline">
+              <div class="input drop">
+                <h4 class="title ic-location">Location<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <input type="text">
+                  <div class="radius">
+                    <label>Search Radius, km</label>
+                    <input class="radius-num" type="text" value="10"><span class="ic-plus inc"></span><span class="ic-minus dec"></span>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="price drop open">
+                <h4 class="title ic-biweekly">Biweekly Payment<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="range-wrapper">
+                    <div class="range-slider">
+                      <input class="js-range-slider" type="text" value="" data-min="0" data-postfix="$" data-max="100000" data-step="5000">
+                    </div>
+                    <div class="extra-controls form-inline">
+                      <div class="form-group">
+                        <input class="js-input-from form-control" type="text" value="0">
+                        <input class="js-input-to form-control" type="text" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="price drop open">
+                <h4 class="title ic-price">Price Range<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="range-wrapper">
+                    <div class="range-slider">
+                      <input class="js-range-slider" type="text" value="" data-min="0" data-postfix="$" data-max="100000" data-step="5000">
+                    </div>
+                    <div class="extra-controls form-inline">
+                      <div class="form-group">
+                        <input class="js-input-from form-control" type="text" value="0">
+                        <input class="js-input-to form-control" type="text" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="make drop">
+                <h4 class="title ic-make">Make<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="acura" type="checkbox">
+                    <label class="ic-check" for="acura">Acura</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="audi" type="checkbox">
+                    <label class="ic-check" for="audi">Audi</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="bmw" type="checkbox">
+                    <label class="ic-check" for="bmw">BMW</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="fiat" type="checkbox">
+                    <label class="ic-check" for="fiat">Fiat</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ford" type="checkbox">
+                    <label class="ic-check" for="ford">Ford</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="honda" type="checkbox">
+                    <label class="ic-check" for="honda">Honda</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="hyundai" type="checkbox">
+                    <label class="ic-check" for="hyundai">Hyundai</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="jaguar" type="checkbox">
+                    <label class="ic-check" for="jaguar">Jaguar</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="land-rover" type="checkbox">
+                    <label class="ic-check" for="land-rover">Land Rover</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="maserati" type="checkbox">
+                    <label class="ic-check" for="maserati">Maserati</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="mazda" type="checkbox">
+                    <label class="ic-check" for="mazda">Mazda</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="mercedes-menz" type="checkbox">
+                    <label class="ic-check" for="mercedes-menz">Mercedes-Benz</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="mitsubishi" type="checkbox">
+                    <label class="ic-check" for="mitsubishi">Mitsubishi</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="porsche" type="checkbox">
+                    <label class="ic-check" for="porsche">Porsche</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="tesla" type="checkbox">
+                    <label class="ic-check" for="tesla">Tesla</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="toyota" type="checkbox">
+                    <label class="ic-check" for="toyota">Toyota</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="volkswagen" type="checkbox">
+                    <label class="ic-check" for="volkswagen">Volkswagen</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="volvo" type="checkbox">
+                    <label class="ic-check" for="volvo">Volvo</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="model drop disable">
+                <h4 class="title ic-model">Model<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="2-series" type="checkbox">
+                    <label class="ic-check" for="2-series">2 Series</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="3-series" type="checkbox">
+                    <label class="ic-check" for="3-series">3 Series</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="4-series" type="checkbox">
+                    <label class="ic-check" for="4-series">4 Series</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="4-series-gran-coupe" type="checkbox">
+                    <label class="ic-check" for="4-series-gran-coupe">4-Series Gran Coupe</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="5-series" type="checkbox">
+                    <label class="ic-check" for="5-series">5-Series</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="fiat-500" type="checkbox">
+                    <label class="ic-check" for="fiat-500">500</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="a3" type="checkbox">
+                    <label class="ic-check" for="a3">A3</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="a4" type="checkbox">
+                    <label class="ic-check" for="a4">A4</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="a5" type="checkbox">
+                    <label class="ic-check" for="a5">A5</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="a7" type="checkbox">
+                    <label class="ic-check" for="a7">A7</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="accord" type="checkbox">
+                    <label class="ic-check" for="accord">Accord</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="c-class" type="checkbox">
+                    <label class="ic-check" for="c-class">C-Class</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="cayenne" type="checkbox">
+                    <label class="ic-check" for="cayenne">Cayenne</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="corolla" type="checkbox">
+                    <label class="ic-check" for="corolla">Corolla</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="f-pace" type="checkbox">
+                    <label class="ic-check" for="f-pace">F-Pace</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ghibli" type="checkbox">
+                    <label class="ic-check" for="ghibli">Ghibli</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="gti" type="checkbox">
+                    <label class="ic-check" for="gti">GTI</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="lancer" type="checkbox">
+                    <label class="ic-check" for="lancer">Lancer</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="macan" type="checkbox">
+                    <label class="ic-check" for="macan">Macan</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="mazda3" type="checkbox">
+                    <label class="ic-check" for="mazda3">MAZDA3</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="model-s" type="checkbox">
+                    <label class="ic-check" for="model-s">Model S</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="mustang" type="checkbox">
+                    <label class="ic-check" for="mustang">Mustang</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="q5" type="checkbox">
+                    <label class="ic-check" for="q5">Q5</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="range-rover" type="checkbox">
+                    <label class="ic-check" for="range-rover">Range Rover</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="range-rover-evoque" type="checkbox">
+                    <label class="ic-check" for="range-rover-evoque">Range Rover Evoque</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="range-rover-sport" type="checkbox">
+                    <label class="ic-check" for="range-rover-sport">Range Rover Sport</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="s5" type="checkbox">
+                    <label class="ic-check" for="s5">S5</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="tiguan" type="checkbox">
+                    <label class="ic-check" for="tiguan">Tiguan</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="tlx" type="checkbox">
+                    <label class="ic-check" for="tlx">TLX</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="tucson" type="checkbox">
+                    <label class="ic-check" for="tucson">Tucson</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="x3" type="checkbox">
+                    <label class="ic-check" for="x3">X3</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="x4" type="checkbox">
+                    <label class="ic-check" for="x4">X4</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="x5" type="checkbox">
+                    <label class="ic-check" for="x5">X5</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="xc90" type="checkbox">
+                    <label class="ic-check" for="xc90">XC90</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="year drop">
+                <h4 class="title ic-calendar">Year<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="year-2014" type="checkbox">
+                    <label class="ic-check" for="year-2014">2014</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="year-2015" type="checkbox">
+                    <label class="ic-check" for="year-2015">2015</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="year-2016" type="checkbox">
+                    <label class="ic-check" for="year-2016">2016</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="year-2017" type="checkbox">
+                    <label class="ic-check" for="year-2017">2017</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="year-2018" type="checkbox">
+                    <label class="ic-check" for="year-2018">2018</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="year-2019" type="checkbox">
+                    <label class="ic-check" for="year-2019">2019</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="year-2020" type="checkbox">
+                    <label class="ic-check" for="year-2020">2020</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="body-type drop">
+                <h4 class="title ic-body-type">Body Type<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="truck" type="checkbox">
+                    <label class="ic-check" for="truck">Truck</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="suv" type="checkbox">
+                    <label class="ic-check" for="suv">Suv</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="van" type="checkbox">
+                    <label class="ic-check" for="van">Van</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="sedan" type="checkbox">
+                    <label class="ic-check" for="sedan">Sedan</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="coupe" type="checkbox">
+                    <label class="ic-check" for="coupe">Coupe</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="fuel drop">
+                <h4 class="title ic-fuel">Fuel type<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="diesel" type="checkbox">
+                    <label class="ic-check" for="diesel">Diesel</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="electric" type="checkbox">
+                    <label class="ic-check" for="electric">Electric</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="gas" type="checkbox">
+                    <label class="ic-check" for="gas">Gas</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="drivetrain drop">
+                <h4 class="title ic-drivetrain">Drivetrain<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="awd" type="checkbox">
+                    <label class="ic-check" for="awd">AWD</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="fwd" type="checkbox">
+                    <label class="ic-check" for="fwd">FWD</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="rwd" type="checkbox">
+                    <label class="ic-check" for="rwd">RWD</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="exterior drop">
+                <h4 class="title ic-exterior">Exterior Color<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="ex-black" type="checkbox">
+                    <label class="ic-check" for="ex-black">Black</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-blue" type="checkbox">
+                    <label class="ic-check" for="ex-blue">Blue</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-brown" type="checkbox">
+                    <label class="ic-check" for="ex-brown">Brown</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-dark-blue" type="checkbox">
+                    <label class="ic-check" for="ex-dark-blue">Dark Blue</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-dark-grey" type="checkbox">
+                    <label class="ic-check" for="ex-dark-grey">Dark Grey</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-gray" type="checkbox">
+                    <label class="ic-check" for="ex-gray">Gray</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-red" type="checkbox">
+                    <label class="ic-check" for="ex-red">Red</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-silver" type="checkbox">
+                    <label class="ic-check" for="ex-silver">Silver</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="ex-white" type="checkbox">
+                    <label class="ic-check" for="ex-white">White</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="transmission drop">
+                <h4 class="title ic-transmission">Transmission<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="automatic" type="checkbox">
+                    <label class="ic-check" for="automatic">Automatic</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="manual" type="checkbox">
+                    <label class="ic-check" for="manual">Manual</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="engine drop">
+                <h4 class="title ic-engine">Engine<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="l-1-4" type="checkbox">
+                    <label class="ic-check" for="l-1-4">1.4 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-1-8" type="checkbox">
+                    <label class="ic-check" for="l-1-8">1.8 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-2" type="checkbox">
+                    <label class="ic-check" for="l-2">2 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-2-5" type="checkbox">
+                    <label class="ic-check" for="l-2-5">2.5 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-3" type="checkbox">
+                    <label class="ic-check" for="l-3">3 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-3-5" type="checkbox">
+                    <label class="ic-check" for="l-3-5">3.5 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-3-6" type="checkbox">
+                    <label class="ic-check" for="l-3-6">3.6 L</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="l-5" type="checkbox">
+                    <label class="ic-check" for="l-5">5 L</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <div class="interior drop">
+                <h4 class="title ic-interior">Interior Color<i class="ic-plus"></i></h4>
+                <div class="hide">
+                  <div class="checkbox">
+                    <input id="in-black" type="checkbox">
+                    <label class="ic-check" for="in-black">Black</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="in-brown" type="checkbox">
+                    <label class="ic-check" for="in-brown">Brown</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="in-cream" type="checkbox">
+                    <label class="ic-check" for="in-cream">Cream</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="in-gray" type="checkbox">
+                    <label class="ic-check" for="in-gray">Gray</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="in-grey" type="checkbox">
+                    <label class="ic-check" for="in-grey">Grey</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="in-red" type="checkbox">
+                    <label class="ic-check" for="in-red">Red</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="in-tan" type="checkbox">
+                    <label class="ic-check" for="in-tan">Tan</label>
+                  </div>
+                </div>
+              </div>
+              <hr class="sline">
+              <button class="clear-all button" type="rest">Reset all</button>
+            </form>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-7 col-xs-6">
+            <div class="cars-list">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="dfr">
+                    <p class="matches">213 matches</p>
+                    <div class="sort dfr">
+                      <p>Sort by:</p>
+                      <select id="sort-item">
+                        <option value="date_high">Date: newest first</option>
+                        <option value="date_low">Date: oldest first</option>
+                        <option value="price_low">Price: lower first</option>
+                        <option value="price_high">Price: highest first</option>
+                        <option value="mileage_low">Mileage: lowest first</option>
+                        <option value="mileage_high">Mileage: highest first</option>
+                      </select>
+                    </div>
+                  </div>
+                  <ul class="filter-chosen dfr">
+                    <li><span>Biweekly Payment:</span>$0 - $1,309</li>
+                    <li><span>Price:</span>$0 - $63,888</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div class="item">
+                    <div class="img"><img src="img/car.jpg" alt=""></div>
+                    <div class="car-meta-top heading-font">
+                      <div class="title-wrapper m-price">
+                        <h4 class="car-title">2019 | Subaru | Crosstrek | Sport H-4 cyl</h4>
+                        <div class="price">
+                          <p class="monthly-price">$275.23<span>biweekly</span></p>
+                          <div class="price discounted-price"></div>
+                        </div>
+                      </div>
+                      <div class="carnance-price-wrapper">
+                        <p class="mileage">50 614 km</p>
+                        <p class="normal-price">$27,999.00</p>
+                      </div>
+                    </div><a class="link" href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="wp-pagenavi"><span class="pages">Page 2 of 94</span><a class="previouspostslink" rel="prev" href="#">Previous Page</a><a class="page smaller" title="Page 1" href="#">1</a><span class="current" aria-current="page">2</span><a class="page larger" title="Page 3" href="#">3</a><span class="extend">...</span><a class="nextpostslink" rel="next" href="#">Next Page</a><a class="last" href="#">94</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="dfr">
+              <ul class="menu">
+                <li><a href="#">Browse Inventory</a></li>
+                <li><a href="#">Online Financing</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              <ul class="contacts">
+                <li class="ic-phone"><a href="#">+1 866-416-6240</a></li>
+                <li class="ic-mail"><a href="#">support@carnance.ca</a></li>
+                <li class="ic-location"><a href="#">111 Buttermill Ave Unit #2, Concord, ON L4K 3X5</a></li>
+                <li class="ic-clock">
+                  <p>Hours of operation:<br><b>Mon – Fri:</b> 09:00AM – 09:00PM<br><b>Saturday:</b> 09:00AM – 07:00PM<br><b>Sunday:</b> Closed</p>
+                </li>
+              </ul>
+              <div class="logos">
+                <p>Proud member of</p>
+                <ul>
+                  <li><img src="img/logo-bbb.png" alt=""></li>
+                  <li><img src="img/logo-omvic.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright-block dfr">
+              <p>Copyright © 2020 Carnance Inc.</p>
+              <ul class="soc dfr">
+                <li class="ic-linkedin"><a href="">Linkedin</a></li>
+                <li class="ic-facebook"><a href="">Facebook</a></li>
+                <li class="ic-instagram"><a href="">Instagram</a></li>
+                <li class="ic-twitter"><a href="">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/build.js"></script>
+    <script src="jwa_cars_listings/assets/js/ion.rangeSlider.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.fancybox.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/select2.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/slick.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/main.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.IncrementBox.js"></script>
+    <script>
+      $('.radius').IncrementBox({
+      	timeout: 75,
+      	cursor: true,
+      });
+      $(".radius-num").keypress(function(event){
+      	event = event || window.event;
+      	if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+      		return false;
+      	}
+      });
+    </script>
+  </body>
+</html>

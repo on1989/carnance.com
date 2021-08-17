@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Pug Page</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick-theme.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/select2.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/presets/style-5.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+      .top-head:after{
+      	background-image: -webkit-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	background-image: -ms-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	content: '';
+      	display: block;
+      	position: absolute;
+      	left: 0px;
+      	top: 40px;
+      	width: 100%;
+      	height: 70px;
+      	z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr">
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">ONLINE FINANCING</a></li>
+                </ul><a class="tel dfr icon-phone" href="tel:+1 866-416-6240">+1 866-416-6240</a>
+                <ul class="soc dfr">
+                  <li class="icon-facebook"><a href="#">facebook</a></li>
+                  <li class="icon-twitter"><a href="#">twitter</a></li>
+                  <li class="icon-instagram"><a href="#">instagram</a></li>
+                  <li class="icon-linkedin"><a href="#">linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr"><a class="logo" href="#">
+                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 223 29">
+                    <path class="st1" d="M6.6,17.2v-4.9c0-3.7,3-6.7,6.7-6.7h0.7L16.3,0h-4.8C5.1,0,0,5.2,0,11.5v5.8c0,6.3,5.1,11.4,11.4,11.4h12.1								v-4.9H13.3C9.6,23.9,6.6,20.9,6.6,17.2z"></path>
+                    <path class="st1" d="M19.4,0l-2.3,5.6h4.5L23.8,0H19.4z"></path>
+                    <path class="st1" d="M29.4,0H27l-2.3,5.6h4.8h2.3L34.1,0H29.4z"></path>
+                    <path class="st2" d="M16.9,18.4l0.4-0.7l2.9-5l2.8-4.8c0.1-0.2-0.2-0.4-0.3-0.3L18,10.7l-4.8,3.2l-0.6,0.4c0,0-0.1,0.1-0.1,0.1								c-1,1-0.8,2.8,0.4,3.9c1.2,1.1,3,1.2,3.9,0.2C16.8,18.5,16.8,18.4,16.9,18.4z"></path>
+                    <path class="st1" d="M44.4,0H38l-2.4,5.7H41l4.3,11h-8.5H31l-5,12h6.3l2.6-6.8h12.4l2.6,6.8h6.7L44.4,0z"></path>
+                    <path class="st2" d="M105.8,0h5.4v28.8h-3.4v0L92.8,9.4v19.4h-5.4V0h4.4l14.1,17.8L105.8,0L105.8,0z"></path>
+                    <path class="st2" d="M166.9,0h5.4v28.8H169v0L153.9,9.4v19.4h-5.4V0h4.4l14.1,17.8L166.9,0L166.9,0z"></path>
+                    <path class="st2" d="M132.8,0h-5.9l-2.7,6h5.7l5.3,12.2h-10.7h-5.8L114,28.8h5.9l2.5-5.4h15l2.4,5.4h5.9L132.8,0z"></path>
+                    <path class="st2" d="M206.9,17h15.5v-5.1h-15.5h-5.4c0,5.6,0,11.3,0,16.9H223v-5.3h-16.1L206.9,17L206.9,17z"></path>
+                    <path class="st2" d="M201.5,0.1c0,1.8,0,3.5,0,5.3h5.4H223V0.1H201.5z"></path>
+                    <path class="st1" d="M77.7,16.8c2-0.5,3.5-1.4,4.4-2.9c0.9-1.5,1.4-3.2,1.4-5.2c0-0.2,0-0.4,0-0.6c0-0.2,0-0.4,0-0.6								c-0.1-1-0.3-1.9-0.7-2.9c-0.4-0.9-0.9-1.7-1.6-2.4c-0.8-0.8-1.7-1.3-2.8-1.6c-1.1-0.3-2.1-0.5-3.2-0.5c-0.3,0-0.6,0-0.9,0								c-0.3,0-0.6,0-0.9,0H58.6v5.1h6H72v0c1.4,0,2.6,0.2,3.7,0.5c1.1,0.3,1.7,1.4,1.7,3.1c0,1.7-0.5,2.7-1.5,3.1								c-1.1,0.4-2.2,0.6-3.5,0.6c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0h-7.4h-6v16.3h6V17.4h7.1L78,28.7h6.8L77.7,16.8z"></path>
+                    <path class="st2" d="M183.2,7.9c-0.9,1.9-1.3,4.1-1.4,6.6c0,0.4,0,0.9,0,1.3s0,0.9,0,1.3c0.1,0.9,0.3,1.8,0.5,2.7								c0.3,0.9,0.7,1.7,1.3,2.4c0.6,0.7,1.4,1.2,2.2,1.3c0.8,0.2,1.7,0.3,2.6,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0l9.9,0v5h-10.2								c-1.6,0-3.2-0.1-4.7-0.4c-1.5-0.3-2.9-1-4.2-2c-1.6-1.3-2.7-2.9-3.4-4.8c-0.6-1.9-1-3.8-1-5.8c0-0.4,0-0.8,0-1.2								c0-0.4,0-0.8,0.1-1.2c0.3-4.5,1.5-7.9,3.7-10c2.2-2.1,5.4-3.2,9.8-3.2l10,0V5h-9.9C185.9,5,184,6,183.2,7.9z"></path>
+                  </svg></a>
+                <div class="burger"><span></span><span></span><span></span></div>
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">Online Financing</a></li>
+                  <li class="button"><a href="#">Get Pre-Approved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="car">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="dfr">
+              <div class="gallery-block">
+                <h1 class="title">Dodge Journey SXT | ONE OWNER | LIFETIME ENGINE WARRANTY</h1>
+                <p class="mileage">27,471 km</p>
+                <div class="gallery">
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-542caedd4ae198247f11d09768c78e4f.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-542caedd4ae198247f11d09768c78e4f.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-5244f46c777f9239eee04e7e59967fda.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-5244f46c777f9239eee04e7e59967fda.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-04d3792fa6742d4d0911c00546f9c0ef.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-04d3792fa6742d4d0911c00546f9c0ef.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-7fd8d88ed19933216dbb5cecceefdfc1.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-7fd8d88ed19933216dbb5cecceefdfc1.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-37437a803b894511ee1b7d5dd702594d.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-37437a803b894511ee1b7d5dd702594d.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-f71d13c69647acf10b31ab7fa3d6b1ae.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-f71d13c69647acf10b31ab7fa3d6b1ae.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-224f3b3bb331798708dda855729e34f0.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-224f3b3bb331798708dda855729e34f0.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-d43a8f156013f532359d4edab0bb6199.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-d43a8f156013f532359d4edab0bb6199.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-212efe743ec87ec1d3b12cd65669bbae.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-212efe743ec87ec1d3b12cd65669bbae.jpg" alt="#"></a></div>
+                  <div class="item"><a href="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-13d1628eab9d9b8023e61437b4d314a4.jpg" data-fancybox="gallery"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-13d1628eab9d9b8023e61437b4d314a4.jpg" alt="#"></a></div>
+                </div>
+                <div class="gallery-nav four-el">
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-542caedd4ae198247f11d09768c78e4f.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-5244f46c777f9239eee04e7e59967fda.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-04d3792fa6742d4d0911c00546f9c0ef.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-7fd8d88ed19933216dbb5cecceefdfc1.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-37437a803b894511ee1b7d5dd702594d.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-f71d13c69647acf10b31ab7fa3d6b1ae.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-224f3b3bb331798708dda855729e34f0.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-d43a8f156013f532359d4edab0bb6199.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-212efe743ec87ec1d3b12cd65669bbae.jpg" alt="#"></div>
+                  <div class="item"><img src="https://thompson.justwebagency.com/carnance/wp-content/uploads/pic-13d1628eab9d9b8023e61437b4d314a4.jpg" alt="#"></div>
+                </div>
+              </div>
+              <div class="description-block">
+                <div class="financing">
+                  <h2 class="title">Estimated Financing</h2>
+                  <div class="dfr">
+                    <h3 class="title">Carnance Price<i class="ic-info"></i>
+                      <p class="tooltip">List price does not include taxes or registration.</p>
+                    </h3>
+                    <p class="price">$22 ,950</p>
+                  </div>
+                  <div class="dfr">
+                    <h3 class="title">Carnance Price<i class="ic-info"></i>
+                      <p class="tooltip">List price does not include taxes or registration.</p>
+                    </h3>
+                    <p class="beweekly-price">$222 biweekly</p>
+                  </div><a class="button" href="#">Apply Now</a>
+                </div>
+                <div class="warranty"><img src="https://carnance.com/wp-content/uploads/warranty.png" alt="">
+                  <h4>7 Day Vehicle Guarantee<span>WE MAKE SURE YOU’RE COVERED</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul class="dfr navigation">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#inspection">Inspection Report</a></li>
+              <li><a href="#financing">Financing Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul class="dfr car-descriotion">
+              <li><i class="ic-calendar"></i>
+                <h5 class="title"><span>Year</span>2017</h5>
+              </li>
+              <li><i class="ic-mileage"></i>
+                <h5 class="title"><span>Mileage</span>100,190 KM</h5>
+              </li>
+              <li><i class="ic-drivetrain"></i>
+                <h5 class="title"><span>DriveTrain</span>AWD</h5>
+              </li>
+              <li><i class="ic-exterior"></i>
+                <h5 class="title"><span> Exterior Color</span>Dark Blue</h5>
+              </li>
+              <li><i class="ic-transmission"></i>
+                <h5 class="title"><span>Transmission</span>Automatic</h5>
+              </li>
+              <li><i class="ic-engine"></i>
+                <h5 class="title"><span>Engine</span>3 L</h5>
+              </li>
+              <li><i class="ic-interior"></i>
+                <h5 class="title"><span>Interior Color</span>Tan</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="features">
+              <h2 class="title">Features</h2>
+              <ul class="features-items">
+                <li class="item ic-check">ABS brakes</li>
+                <li class="item ic-check">Air Conditioning</li>
+                <li class="item ic-check">Alloy wheels</li>
+                <li class="item ic-check">AM/FM Stereo</li>
+                <li class="item ic-check">Auto Dimming Mirrors</li>
+                <li class="item ic-check">Automatic Headlight</li>
+                <li class="item ic-check">Backup Camera</li>
+                <li class="item ic-check">Bluetooth</li>
+                <li class="item ic-check">CD player</li>
+                <li class="item ic-check">Center Arm Rest</li>
+                <li class="item ic-check">Child Safety Locks</li>
+                <li class="item ic-check">Climate Control</li>
+                <li class="item ic-check">Cruise Control</li>
+                <li class="item ic-check">Cup Holder</li>
+                <li class="item ic-check">Daytime Running Lights</li>
+                <li class="item ic-check">Digital Clock</li>
+                <li class="item ic-check">Driver Side Airbag</li>
+                <li class="item ic-check">Dual Impact Airbags</li>
+                <li class="item ic-check">Electronic Stability Control</li>
+                <li class="item ic-check">Entertainment System</li>
+                <li class="item ic-check">Fog Lights</li>
+                <li class="item ic-check">Folding Rear Seat</li>
+                <li class="item ic-check">Heated Seats</li>
+                <li class="item ic-check">Hill Ascent Control</li>
+                <li class="item ic-check">Keyless Entry</li>
+                <li class="item ic-check">Leather seats</li>
+                <li class="item ic-check">Leather Steering Wheels</li>
+                <li class="item ic-check">Low Tire Pressure Warning</li>
+                <li class="item ic-check">Memory Seat</li>
+                <li class="item ic-check">Navigation system</li>
+                <li class="item ic-check">Parking Sensor</li>
+                <li class="item ic-check">Passenger Airbag</li>
+                <li class="item ic-check">Power Brakes</li>
+                <li class="item ic-check">Power Locks</li>
+                <li class="item ic-check">Power Mirrors</li>
+                <li class="item ic-check">Power Seat</li>
+                <li class="item ic-check">Power Steering</li>
+                <li class="item ic-check">Power Windows</li>
+                <li class="item ic-check">Power-Assist Disc Brakes</li>
+                <li class="item ic-check">Rain Sensor Wipers</li>
+                <li class="item ic-check">Rear Window Defroster</li>
+                <li class="item ic-check">Remote Trunk Release</li>
+                <li class="item ic-check">Satellite Radio</li>
+                <li class="item ic-check">Security System</li>
+                <li class="item ic-check">Side Airbag</li>
+                <li class="item ic-check">Sunroof/Moonroof</li>
+                <li class="item ic-check">Tilt Steering</li>
+                <li class="item ic-check">Tinted Glass</li>
+                <li class="item ic-check">Traction Control</li>
+                <li class="item ic-check">Trip Odometer</li>
+                <li class="item ic-check">Vehicle Anti-Theft System</li>
+                <li class="item ic-check">Xenon Headlights</li>
+              </ul><a class="button" id="featured-more" href="#">Show Less</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="information">
+              <h2 class="title">Additional Information</h2>
+              <p class="description">2018, Audi, A3, 2 L Automatic FWD with beautiful Tan interior and Dark Blue exterior, comes with the following ABS brakes, Air Conditioning, Alloy wheels, AM/FM Stereo, Auto Dimming Mirrors, Automatic Headlight, Bluetooth, CD player, Center Arm Rest, Climate Control, Cruise Control, Cup Holder, Daytime Running Lights, Digital Clock, Driver Side Airbag, Dual Impact Airbags. If you’re looking for a reliable Sedan, this is the car for you. Our team at Carnance is here to assist you throughout your whole car buying experience, so if you have any questions feel free to call us, we’re happy to help. Financing and Warranty are available on all our cars through our large network of accredited lenders and distinguished third party warranty providers, offering the best rates and warranty coverage in the country. Whether you have good credit, poor credit, a student, or new to the country, we’re here to support your situation and find you the best possible option. All our vehicles come with a safety certificate to meet your expectations. But wait there’s more, Carnance will also provide a 7 day/250km money back vehicle guarantee if there are any major inconsistencies or damages that were not previously disclosed. Carnance isn’t just another dealership, but the only online, hassle-free dealership that truly meets our clients’ needs and expectations. Carnance’s mission is to provide our customers with a streamlined, easy-to-use solution, which eliminates the common stresses associated with buying a new or used vehicle. Leveraging our technology, our innovative platform provides our users with a customized and simplistic approach tailor-made to suit your vehicle and financing needs. Don’t stress, Buy with Carnance! Call us today at 1-866-416-6240 or check us out online at<a href="#">carnance.com.</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="call-us">
+              <h3><span>Any Questions? We’re here to help!</span>Call Us Today (866) 416-6240</h3><a class="button" href="tel:8664166240">Call now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="dfr">
+              <ul class="menu">
+                <li><a href="#">Browse Inventory</a></li>
+                <li><a href="#">Online Financing</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              <ul class="contacts">
+                <li class="ic-phone"><a href="#">+1 866-416-6240</a></li>
+                <li class="ic-mail"><a href="#">support@carnance.ca</a></li>
+                <li class="ic-location"><a href="#">111 Buttermill Ave Unit #2, Concord, ON L4K 3X5</a></li>
+                <li class="ic-clock">
+                  <p>Hours of operation:<br><b>Mon – Fri:</b> 09:00AM – 09:00PM<br><b>Saturday:</b> 09:00AM – 07:00PM<br><b>Sunday:</b> Closed</p>
+                </li>
+              </ul>
+              <div class="logos">
+                <p>Proud member of</p>
+                <ul>
+                  <li><img src="img/logo-bbb.png" alt=""></li>
+                  <li><img src="img/logo-omvic.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright-block dfr">
+              <p>Copyright © 2020 Carnance Inc.</p>
+              <ul class="soc dfr">
+                <li class="ic-linkedin"><a href="">Linkedin</a></li>
+                <li class="ic-facebook"><a href="">Facebook</a></li>
+                <li class="ic-instagram"><a href="">Instagram</a></li>
+                <li class="ic-twitter"><a href="">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/build.js"></script>
+    <script src="jwa_cars_listings/assets/js/ion.rangeSlider.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.fancybox.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/select2.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/slick.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/main.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.IncrementBox.js"></script>
+  </body>
+</html>

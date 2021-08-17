@@ -1,0 +1,78 @@
+v 1.0.3
+==================================
+1 update car body filter
+2 update year filter field and logics
+
+v 1.0.4
+===================================
+1 add car current status in REST api search by VIN
+2 add generate token and save settings token
+3 add presets style and select style in options page
+4 add error handler when loading galleries
+5 add README.md
+6 change class btn
+
+v 1.0.5
+===================================
+1 add style admin panel
+
+v 1.0.6
+===================================
+1 add human-readable url
+2 change id to slug getModel()
+3 fix bugs update term post by rest
+4 delete ajax filter
+5 add additional information in content block
+6 add widget zone in single car
+
+v 1.0.7
+====================================
+1 add content part in REST
+2 add full width \ box container
+
+v 1.0.9
+=====================================
+1 fix image crop box version
+
+v.1.0.10
+=====================================
+1 relocate filter form to template
+2 add wpbakery component filter
+3 update sql query by filter
+4 add exterior filter
+5 add getModelByMakeAjax
+6 add ajax get Model and Year by Mark
+
+v.1.0.11
+=====================================
+1 fix css
+2 add update gallery Rest
+3 add version file css\js
+4 add param array to function getModelBySlug
+5 add param array to function getYearsByModelSelect
+6 add settings count post output
+7 fix query car year by checkbox elements
+8 fix checked if one element select
+9 add function getCarFuelTypeByModel
+10 add function exteriorColorByMark
+11 add function getEngineByModel
+12 update function ..byModel
+13 update function getIDByTerm
+14 add field Drivetrain
+15 add to REST API drivetrain [ 'type' => 'string', 'required' => false ]
+16 add to REST API features [ 'type' => 'string', 'required' => false ] separator "|"
+17 add function getMakeByPostID
+18 add function getModelByPostID
+19 Added gradation of interest and loan term depending on the year of car production
+20 fix update dealer info
+
+v.1.0.12
+====================================
+1 fix body type field
+2 fix search field
+3 fix make field
+4 fix ajax model update (year\mileage\price)
+5 fix price field range
+
+
+

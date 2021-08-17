@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Pug Page</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick-theme.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/select2.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/presets/style-5.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+      .top-head:after{
+      	background-image: -webkit-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	background-image: -ms-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	content: '';
+      	display: block;
+      	position: absolute;
+      	left: 0px;
+      	top: 40px;
+      	width: 100%;
+      	height: 70px;
+      	z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="home">
+    <header>
+      <div class="top-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr">
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">ONLINE FINANCING</a></li>
+                </ul><a class="tel dfr icon-phone" href="tel:+1 866-416-6240">+1 866-416-6240</a>
+                <ul class="soc dfr">
+                  <li class="icon-facebook"><a href="#">facebook</a></li>
+                  <li class="icon-twitter"><a href="#">twitter</a></li>
+                  <li class="icon-instagram"><a href="#">instagram</a></li>
+                  <li class="icon-linkedin"><a href="#">linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr"><a class="logo" href="#">
+                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 223 29">
+                    <path class="st1" d="M6.6,17.2v-4.9c0-3.7,3-6.7,6.7-6.7h0.7L16.3,0h-4.8C5.1,0,0,5.2,0,11.5v5.8c0,6.3,5.1,11.4,11.4,11.4h12.1								v-4.9H13.3C9.6,23.9,6.6,20.9,6.6,17.2z"></path>
+                    <path class="st1" d="M19.4,0l-2.3,5.6h4.5L23.8,0H19.4z"></path>
+                    <path class="st1" d="M29.4,0H27l-2.3,5.6h4.8h2.3L34.1,0H29.4z"></path>
+                    <path class="st2" d="M16.9,18.4l0.4-0.7l2.9-5l2.8-4.8c0.1-0.2-0.2-0.4-0.3-0.3L18,10.7l-4.8,3.2l-0.6,0.4c0,0-0.1,0.1-0.1,0.1								c-1,1-0.8,2.8,0.4,3.9c1.2,1.1,3,1.2,3.9,0.2C16.8,18.5,16.8,18.4,16.9,18.4z"></path>
+                    <path class="st1" d="M44.4,0H38l-2.4,5.7H41l4.3,11h-8.5H31l-5,12h6.3l2.6-6.8h12.4l2.6,6.8h6.7L44.4,0z"></path>
+                    <path class="st2" d="M105.8,0h5.4v28.8h-3.4v0L92.8,9.4v19.4h-5.4V0h4.4l14.1,17.8L105.8,0L105.8,0z"></path>
+                    <path class="st2" d="M166.9,0h5.4v28.8H169v0L153.9,9.4v19.4h-5.4V0h4.4l14.1,17.8L166.9,0L166.9,0z"></path>
+                    <path class="st2" d="M132.8,0h-5.9l-2.7,6h5.7l5.3,12.2h-10.7h-5.8L114,28.8h5.9l2.5-5.4h15l2.4,5.4h5.9L132.8,0z"></path>
+                    <path class="st2" d="M206.9,17h15.5v-5.1h-15.5h-5.4c0,5.6,0,11.3,0,16.9H223v-5.3h-16.1L206.9,17L206.9,17z"></path>
+                    <path class="st2" d="M201.5,0.1c0,1.8,0,3.5,0,5.3h5.4H223V0.1H201.5z"></path>
+                    <path class="st1" d="M77.7,16.8c2-0.5,3.5-1.4,4.4-2.9c0.9-1.5,1.4-3.2,1.4-5.2c0-0.2,0-0.4,0-0.6c0-0.2,0-0.4,0-0.6								c-0.1-1-0.3-1.9-0.7-2.9c-0.4-0.9-0.9-1.7-1.6-2.4c-0.8-0.8-1.7-1.3-2.8-1.6c-1.1-0.3-2.1-0.5-3.2-0.5c-0.3,0-0.6,0-0.9,0								c-0.3,0-0.6,0-0.9,0H58.6v5.1h6H72v0c1.4,0,2.6,0.2,3.7,0.5c1.1,0.3,1.7,1.4,1.7,3.1c0,1.7-0.5,2.7-1.5,3.1								c-1.1,0.4-2.2,0.6-3.5,0.6c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0h-7.4h-6v16.3h6V17.4h7.1L78,28.7h6.8L77.7,16.8z"></path>
+                    <path class="st2" d="M183.2,7.9c-0.9,1.9-1.3,4.1-1.4,6.6c0,0.4,0,0.9,0,1.3s0,0.9,0,1.3c0.1,0.9,0.3,1.8,0.5,2.7								c0.3,0.9,0.7,1.7,1.3,2.4c0.6,0.7,1.4,1.2,2.2,1.3c0.8,0.2,1.7,0.3,2.6,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0l9.9,0v5h-10.2								c-1.6,0-3.2-0.1-4.7-0.4c-1.5-0.3-2.9-1-4.2-2c-1.6-1.3-2.7-2.9-3.4-4.8c-0.6-1.9-1-3.8-1-5.8c0-0.4,0-0.8,0-1.2								c0-0.4,0-0.8,0.1-1.2c0.3-4.5,1.5-7.9,3.7-10c2.2-2.1,5.4-3.2,9.8-3.2l10,0V5h-9.9C185.9,5,184,6,183.2,7.9z"></path>
+                  </svg></a>
+                <div class="burger"><span></span><span></span><span></span></div>
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">Online Financing</a></li>
+                  <li class="button"><a href="#">Get Pre-Approved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="title">100% Online Car Purchasing<span>Canadas New Way to Buy a Car</span></h1>
+              <form class="filters filters-banner">
+                <h2 class="title">Search Thousands of Cars, Trucks, Suv’s in Ontario</h2>
+                <div class="left-block">
+                  <div class="select ic-make">
+                    <select id="make" name="Make">
+                      <option value="hide">Make</option>
+                      <option value="acura">Acura</option>
+                      <option value="audi">Audi</option>
+                      <option value="bmw">BMW</option>
+                      <option value="fiat">Fiat</option>
+                      <option value="ford">Ford</option>
+                      <option value="honda">Honda</option>
+                      <option value="hyundai">Hyundai</option>
+                      <option value="jaguar">Jaguar</option>
+                      <option value="land-rover">Land Rover</option>
+                      <option value="maserati">Maserati</option>
+                      <option value="mazda">Mazda</option>
+                      <option value="mercedes-benz">Mercedes-Benz</option>
+                      <option value="mitsubishi">Mitsubishi</option>
+                      <option value="porsche">Porsche</option>
+                      <option value="tesla">Tesla</option>
+                      <option value="toyota">Toyota</option>
+                      <option value="volkswagen">Volkswagen</option>
+                      <option value="volvo">Volvo</option>
+                    </select>
+                  </div>
+                  <div class="select ic-model">
+                    <select id="model" name="Model">
+                      <option value="hide">Model</option>
+                      <option value="2-series">2 Series</option>
+                      <option value="3-series">3 Series</option>
+                      <option value="4-series">4 Series</option>
+                      <option value="4-series-gran-coupe">4-Series Gran Coupe</option>
+                      <option value="5-series">5-Series</option>
+                      <option value="500">500</option>
+                      <option value="a3">A3</option>
+                      <option value="a4">A4</option>
+                      <option value="a5">A5</option>
+                      <option value="a7">A7</option>
+                      <option value="accord">Accord</option>
+                      <option value="c-class">C-Class</option>
+                      <option value="cayenne">Cayenne</option>
+                      <option value="corolla">Corolla</option>
+                      <option value="f-pace">F-Pace</option>
+                      <option value="ghibli">Ghibli</option>
+                      <option value="gti">GTI</option>
+                      <option value="lancer">Lancer</option>
+                      <option value="macan">Macan</option>
+                      <option value="mazda3">MAZDA3</option>
+                      <option value="model-s">Model S</option>
+                      <option value="mustang">Mustang</option>
+                      <option value="q5">Q5</option>
+                      <option value="range-rover">Range Rover</option>
+                      <option value="range-rover-evoque">Range Rover Evoque</option>
+                      <option value="range-rover-sport">Range Rover Sport</option>
+                      <option value="s5">S5</option>
+                      <option value="tiguan">Tiguan</option>
+                      <option value="tlx">TLX</option>
+                      <option value="tucson">Tucson</option>
+                      <option value="x3">X3</option>
+                      <option value="x4">X4</option>
+                      <option value="x5">X5</option>
+                      <option value="xc90">XC90</option>
+                    </select>
+                  </div>
+                  <div class="select ic-calendar">
+                    <select id="year" name="Year">
+                      <option value="hide">Year</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select>
+                  </div>
+                  <div class="input ic-location">
+                    <input type="text" placeholder="Enter a location">
+                  </div>
+                  <div class="hidden-filters">
+                    <div class="select-range ic-price">
+                      <p>Price</p>
+                      <div class="range-wrapper">
+                        <div class="range-slider">
+                          <input class="js-range-slider" type="text" value="" data-min="0" data-postfix="$" data-max="100000" data-step="5000">
+                        </div>
+                        <div class="extra-controls form-inline">
+                          <div class="form-group">
+                            <input class="js-input-from form-control" type="text" value="0">
+                            <input class="js-input-to form-control" type="text" value="0">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="select ic-body-type">
+                      <select id="body-type" name="Body Type">
+                        <option value="hide">Body Type</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Suv">Suv</option>
+                        <option value="Van">Van</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Coupe">Coupe</option>
+                      </select>
+                    </div>
+                    <div class="select ic-fuel">
+                      <select id="fuel" name="fuel">
+                        <option value="hide">Fuel type</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electric">Electric</option>
+                        <option value="gas">Gas</option>
+                      </select>
+                    </div>
+                    <div class="select ic-exterior">
+                      <select id="exterior-color" name="exterior-color">
+                        <option value="hide"> Exterior Color</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="brown">Brown</option>
+                        <option value="dark-blue">Dark Blue</option>
+                        <option value="dark-grey">Dark Grey</option>
+                        <option value="gray">Gray</option>
+                        <option value="red">Red</option>
+                        <option value="silver">Silver</option>
+                        <option value="white">White</option>
+                      </select>
+                    </div>
+                    <div class="select ic-engine">
+                      <select id="engine" name="engine">
+                        <option value="hide"> Engine</option>
+                        <option value="1-4-l">1.4 L</option>
+                        <option value="1-8-l">1.8 L</option>
+                        <option value="2-l">2 L</option>
+                        <option value="2-5-l">2.5 L</option>
+                        <option value="3-l">3 L</option>
+                        <option value="3-5-l">3.5 L</option>
+                        <option value="3-6-l">3.6 L</option>
+                        <option value="5-l">5 L</option>
+                      </select>
+                    </div>
+                    <div class="select ic-interior">
+                      <select id="interior-color" name="interior-color">
+                        <option value=""> Interior Color</option>
+                        <option value="black">Black</option>
+                        <option value="brown">Brown</option>
+                        <option value="cream">Cream</option>
+                        <option value="gray">Gray</option>
+                        <option value="grey">Grey</option>
+                        <option value="red">Red</option>
+                        <option value="tan">Tan</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-block">
+                  <button class="ic-search jwa_button filter-button" type="submit">Search</button>
+                  <button class="ic-reset" type="reset">Reset</button>
+                </div><a class="show-filters" href="#">Show advanced filters</a>
+                <div class="sefety"><img src="img/shield.png" alt="">
+                  <p><strong>Safety First</strong>. All cars are fully disinfected and sanitized before delivery.<a href="/about-us/">Learn more about</a>what we do.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="dfr">
+              <ul class="menu">
+                <li><a href="#">Browse Inventory</a></li>
+                <li><a href="#">Online Financing</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              <ul class="contacts">
+                <li class="ic-phone"><a href="#">+1 866-416-6240</a></li>
+                <li class="ic-mail"><a href="#">support@carnance.ca</a></li>
+                <li class="ic-location"><a href="#">111 Buttermill Ave Unit #2, Concord, ON L4K 3X5</a></li>
+                <li class="ic-clock">
+                  <p>Hours of operation:<br><b>Mon – Fri:</b> 09:00AM – 09:00PM<br><b>Saturday:</b> 09:00AM – 07:00PM<br><b>Sunday:</b> Closed</p>
+                </li>
+              </ul>
+              <div class="logos">
+                <p>Proud member of</p>
+                <ul>
+                  <li><img src="img/logo-bbb.png" alt=""></li>
+                  <li><img src="img/logo-omvic.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright-block dfr">
+              <p>Copyright © 2020 Carnance Inc.</p>
+              <ul class="soc dfr">
+                <li class="ic-linkedin"><a href="">Linkedin</a></li>
+                <li class="ic-facebook"><a href="">Facebook</a></li>
+                <li class="ic-instagram"><a href="">Instagram</a></li>
+                <li class="ic-twitter"><a href="">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/ion.rangeSlider.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.fancybox.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/select2.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/slick.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/main.js"></script>
+    <script src="js/build.js"></script>
+  </body>
+</html>

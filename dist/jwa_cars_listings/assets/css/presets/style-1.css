@@ -1,0 +1,106 @@
+.filters .jwa_button,
+.filters .filter-button,
+.cars-list .vc_btn3,
+.cars .jwa_button,
+.car .jwa_button {
+    min-width: 270px;
+    height: 50px;
+    background: #F2C94C;
+    border-radius: 4px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2F2F2F;
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.filters .filter-button:hover,
+.cars-list .vc_btn3:hover,
+.cars .jwa_button:hover,
+.car .jwa_button:hover {
+    background: #D2A417 !important;
+    border-color: #D2A417 !important;
+}
+
+.filters .filter-button {
+    color: #fff;
+}
+
+.filters .jwa_button.transparent,
+.cars .jwa_button.transparent {
+    color: #0C0B36;
+    background-color: transparent !important;
+    border-color: transparent;
+}
+
+.filters .jwa_button.transparent:hover,
+.cars .jwa_button.transparent:hover {
+    color: #F2C94C;
+    background-color: transparent;
+}
+
+.cars .jwa_button {
+    width: 100% !important;
+    min-width: 0;
+    height: 63px;
+    margin: 20px 0;
+    max-width: 300px;
+    color: #2F2F2F;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.car .description-block .jwa_button {
+    width: 100%;
+    height: 64px;
+    font-size: 18px;
+    color: #2F2F2F;
+    margin-bottom: 40px;
+}
+
+.additional-block a {
+    color: #F2C94C;
+}
+
+.additional-block a:hover {
+    color: #D2A417;
+}
+
+.additional-block blockquote {
+    border: 3px solid #F2C94C;
+}
+
+.additional-block blockquote:after,
+.additional-block blockquote:before {
+    color: #F2C94C;
+}
+
+.additional-block ul li:before {
+    background: #F2C94C;
+}
+
+.filters .select-range, .filters .select {
+    width: calc((100% - 299px) / 6);
+}
+
+.cars-list .item:hover .car-title {
+    color: #D2A417;
+}
+
+.wp-pagenavi a:not(.previouspostslink):not(.nextpostslink):hover,
+.wp-pagenavi span.current {
+    background: #507939;
+}

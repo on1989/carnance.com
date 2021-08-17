@@ -1,0 +1,608 @@
+section
+	.banner-mini(style="background-image:url(img/title-box-default-bg.jpg)")
+		.container
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					h1.title SEARCH FOR YOUR NEXT CAR
+					.breadcrumbs
+						span
+							a.home(href='#')
+								span(property='name') Carnance
+						span
+							span SEARCH FOR YOUR NEXT CAR
+	.container
+		.row
+			.col-lg-3.col-md-3.col-sm-5.col-xs-6
+				form.filters.left-sidebar
+					.filters-result.dfr
+						p 12 filters
+						a.clear-all Clear All
+					hr.sline
+					.input.drop
+						h4.title.ic-location Location
+							i.ic-plus
+						.hide
+							input(type="text")
+							.radius
+								label Search Radius, km
+								input.radius-num(type="text" value="10")
+								span.ic-plus.inc
+								span.ic-minus.dec
+					hr.sline
+					.price.drop.open
+						h4.title.ic-biweekly Biweekly Payment
+							i.ic-plus
+						.hide
+							.range-wrapper
+								.range-slider
+									input.js-range-slider(type='text' value='' data-min='0' data-postfix='$' data-max='100000' data-step='5000')
+								.extra-controls.form-inline
+									.form-group
+										input.js-input-from.form-control(type='text' value='0')
+										input.js-input-to.form-control(type='text' value='0')
+					hr.sline
+					.price.drop.open
+						h4.title.ic-price Price Range
+							i.ic-plus
+						.hide
+							.range-wrapper
+								.range-slider
+									input.js-range-slider(type='text' value='' data-min='0' data-postfix='$' data-max='100000' data-step='5000')
+								.extra-controls.form-inline
+									.form-group
+										input.js-input-from.form-control(type='text' value='0')
+										input.js-input-to.form-control(type='text' value='0')
+					hr.sline
+					.make.drop
+						h4.title.ic-make Make
+							i.ic-plus
+						.hide
+							.checkbox
+								input#acura(type="checkbox")
+								label.ic-check(for="acura") Acura
+							.checkbox
+								input#audi(type="checkbox")
+								label.ic-check(for="audi") Audi
+							.checkbox
+								input#bmw(type="checkbox")
+								label.ic-check(for="bmw") BMW
+							.checkbox
+								input#fiat(type="checkbox")
+								label.ic-check(for="fiat") Fiat
+							.checkbox
+								input#ford(type="checkbox")
+								label.ic-check(for="ford") Ford
+							.checkbox
+								input#honda(type="checkbox")
+								label.ic-check(for="honda") Honda
+							.checkbox
+								input#hyundai(type="checkbox")
+								label.ic-check(for="hyundai") Hyundai
+							.checkbox
+								input#jaguar(type="checkbox")
+								label.ic-check(for="jaguar") Jaguar
+							.checkbox
+								input#land-rover(type="checkbox")
+								label.ic-check(for="land-rover") Land Rover
+							.checkbox
+								input#maserati(type="checkbox")
+								label.ic-check(for="maserati") Maserati
+							.checkbox
+								input#mazda(type="checkbox")
+								label.ic-check(for="mazda") Mazda
+							.checkbox
+								input#mercedes-menz(type="checkbox")
+								label.ic-check(for="mercedes-menz") Mercedes-Benz
+							.checkbox
+								input#mitsubishi(type="checkbox")
+								label.ic-check(for="mitsubishi") Mitsubishi
+							.checkbox
+								input#porsche(type="checkbox")
+								label.ic-check(for="porsche") Porsche
+							.checkbox
+								input#tesla(type="checkbox")
+								label.ic-check(for="tesla") Tesla
+							.checkbox
+								input#toyota(type="checkbox")
+								label.ic-check(for="toyota") Toyota
+							.checkbox
+								input#volkswagen(type="checkbox")
+								label.ic-check(for="volkswagen") Volkswagen
+							.checkbox
+								input#volvo(type="checkbox")
+								label.ic-check(for="volvo") Volvo
+					hr.sline
+					.model.drop.disable
+						h4.title.ic-model Model
+							i.ic-plus
+						.hide
+							.checkbox
+								input#2-series(type="checkbox")
+								label.ic-check(for="2-series") 2 Series
+							.checkbox
+								input#3-series(type="checkbox")
+								label.ic-check(for="3-series") 3 Series
+							.checkbox
+								input#4-series(type="checkbox")
+								label.ic-check(for="4-series") 4 Series
+							.checkbox
+								input#4-series-gran-coupe(type="checkbox")
+								label.ic-check(for="4-series-gran-coupe") 4-Series Gran Coupe
+							.checkbox
+								input#5-series(type="checkbox")
+								label.ic-check(for="5-series") 5-Series
+							.checkbox
+								input#fiat-500(type="checkbox")
+								label.ic-check(for="fiat-500") 500
+							.checkbox
+								input#a3(type="checkbox")
+								label.ic-check(for="a3") A3
+							.checkbox
+								input#a4(type="checkbox")
+								label.ic-check(for="a4") A4
+							.checkbox
+								input#a5(type="checkbox")
+								label.ic-check(for="a5") A5
+							.checkbox
+								input#a7(type="checkbox")
+								label.ic-check(for="a7") A7
+							.checkbox
+								input#accord(type="checkbox")
+								label.ic-check(for="accord") Accord
+							.checkbox
+								input#c-class(type="checkbox")
+								label.ic-check(for="c-class") C-Class
+							.checkbox
+								input#cayenne(type="checkbox")
+								label.ic-check(for="cayenne") Cayenne
+							.checkbox
+								input#corolla(type="checkbox")
+								label.ic-check(for="corolla") Corolla
+							.checkbox
+								input#f-pace(type="checkbox")
+								label.ic-check(for="f-pace") F-Pace
+							.checkbox
+								input#ghibli(type="checkbox")
+								label.ic-check(for="ghibli") Ghibli
+							.checkbox
+								input#gti(type="checkbox")
+								label.ic-check(for="gti") GTI
+							.checkbox
+								input#lancer(type="checkbox")
+								label.ic-check(for="lancer") Lancer
+							.checkbox
+								input#macan(type="checkbox")
+								label.ic-check(for="macan") Macan
+							.checkbox
+								input#mazda3(type="checkbox")
+								label.ic-check(for="mazda3") MAZDA3
+							.checkbox
+								input#model-s(type="checkbox")
+								label.ic-check(for="model-s") Model S
+							.checkbox
+								input#mustang(type="checkbox")
+								label.ic-check(for="mustang") Mustang
+							.checkbox
+								input#q5(type="checkbox")
+								label.ic-check(for="q5") Q5
+							.checkbox
+								input#range-rover(type="checkbox")
+								label.ic-check(for="range-rover") Range Rover
+							.checkbox
+								input#range-rover-evoque(type="checkbox")
+								label.ic-check(for="range-rover-evoque") Range Rover Evoque
+							.checkbox
+								input#range-rover-sport(type="checkbox")
+								label.ic-check(for="range-rover-sport") Range Rover Sport
+							.checkbox
+								input#s5(type="checkbox")
+								label.ic-check(for="s5") S5
+							.checkbox
+								input#tiguan(type="checkbox")
+								label.ic-check(for="tiguan") Tiguan
+							.checkbox
+								input#tlx(type="checkbox")
+								label.ic-check(for="tlx") TLX
+							.checkbox
+								input#tucson(type="checkbox")
+								label.ic-check(for="tucson") Tucson
+							.checkbox
+								input#x3(type="checkbox")
+								label.ic-check(for="x3") X3
+							.checkbox
+								input#x4(type="checkbox")
+								label.ic-check(for="x4") X4
+							.checkbox
+								input#x5(type="checkbox")
+								label.ic-check(for="x5") X5
+							.checkbox
+								input#xc90(type="checkbox")
+								label.ic-check(for="xc90") XC90
+					hr.sline
+					.year.drop
+						h4.title.ic-calendar Year
+							i.ic-plus
+						.hide
+							.checkbox
+								input#year-2014(type="checkbox")
+								label.ic-check(for="year-2014") 2014
+							.checkbox
+								input#year-2015(type="checkbox")
+								label.ic-check(for="year-2015") 2015
+							.checkbox
+								input#year-2016(type="checkbox")
+								label.ic-check(for="year-2016") 2016
+							.checkbox
+								input#year-2017(type="checkbox")
+								label.ic-check(for="year-2017") 2017
+							.checkbox
+								input#year-2018(type="checkbox")
+								label.ic-check(for="year-2018") 2018
+							.checkbox
+								input#year-2019(type="checkbox")
+								label.ic-check(for="year-2019") 2019
+							.checkbox
+								input#year-2020(type="checkbox")
+								label.ic-check(for="year-2020") 2020
+					hr.sline
+					.body-type.drop
+						h4.title.ic-body-type Body Type
+							i.ic-plus
+						.hide
+							.checkbox
+								input#truck(type="checkbox")
+								label.ic-check(for="truck") Truck
+							.checkbox
+								input#suv(type="checkbox")
+								label.ic-check(for="suv") Suv
+							.checkbox
+								input#van(type="checkbox")
+								label.ic-check(for="van") Van
+							.checkbox
+								input#sedan(type="checkbox")
+								label.ic-check(for="sedan") Sedan
+							.checkbox
+								input#coupe(type="checkbox")
+								label.ic-check(for="coupe") Coupe
+					hr.sline
+					.fuel.drop
+						h4.title.ic-fuel Fuel type
+							i.ic-plus
+						.hide
+							.checkbox
+								input#diesel(type="checkbox")
+								label.ic-check(for="diesel") Diesel
+							.checkbox
+								input#electric(type="checkbox")
+								label.ic-check(for="electric") Electric
+							.checkbox
+								input#gas(type="checkbox")
+								label.ic-check(for="gas") Gas
+					hr.sline
+					.drivetrain.drop
+						h4.title.ic-drivetrain Drivetrain
+							i.ic-plus
+						.hide
+							.checkbox
+								input#awd(type="checkbox")
+								label.ic-check(for="awd") AWD
+							.checkbox
+								input#fwd(type="checkbox")
+								label.ic-check(for="fwd") FWD
+							.checkbox
+								input#rwd(type="checkbox")
+								label.ic-check(for="rwd") RWD
+					hr.sline
+					.exterior.drop
+						h4.title.ic-exterior Exterior Color
+							i.ic-plus
+						.hide
+							.checkbox
+								input#ex-black(type="checkbox")
+								label.ic-check(for="ex-black") Black
+							.checkbox
+								input#ex-blue(type="checkbox")
+								label.ic-check(for="ex-blue") Blue
+							.checkbox
+								input#ex-brown(type="checkbox")
+								label.ic-check(for="ex-brown") Brown
+							.checkbox
+								input#ex-dark-blue(type="checkbox")
+								label.ic-check(for="ex-dark-blue") Dark Blue
+							.checkbox
+								input#ex-dark-grey(type="checkbox")
+								label.ic-check(for="ex-dark-grey") Dark Grey
+							.checkbox
+								input#ex-gray(type="checkbox")
+								label.ic-check(for="ex-gray") Gray
+							.checkbox
+								input#ex-red(type="checkbox")
+								label.ic-check(for="ex-red") Red
+							.checkbox
+								input#ex-silver(type="checkbox")
+								label.ic-check(for="ex-silver") Silver
+							.checkbox
+								input#ex-white(type="checkbox")
+								label.ic-check(for="ex-white") White
+					hr.sline
+					.transmission.drop
+						h4.title.ic-transmission Transmission
+							i.ic-plus
+						.hide
+							.checkbox
+								input#automatic(type="checkbox")
+								label.ic-check(for="automatic") Automatic
+							.checkbox
+								input#manual(type="checkbox")
+								label.ic-check(for="manual") Manual
+					hr.sline
+					.engine.drop
+						h4.title.ic-engine Engine
+							i.ic-plus
+						.hide
+							.checkbox
+								input#l-1-4(type="checkbox")
+								label.ic-check(for="l-1-4") 1.4 L
+							.checkbox
+								input#l-1-8(type="checkbox")
+								label.ic-check(for="l-1-8") 1.8 L
+							.checkbox
+								input#l-2(type="checkbox")
+								label.ic-check(for="l-2") 2 L
+							.checkbox
+								input#l-2-5(type="checkbox")
+								label.ic-check(for="l-2-5") 2.5 L
+							.checkbox
+								input#l-3(type="checkbox")
+								label.ic-check(for="l-3") 3 L
+							.checkbox
+								input#l-3-5(type="checkbox")
+								label.ic-check(for="l-3-5") 3.5 L
+							.checkbox
+								input#l-3-6(type="checkbox")
+								label.ic-check(for="l-3-6") 3.6 L
+							.checkbox
+								input#l-5(type="checkbox")
+								label.ic-check(for="l-5") 5 L
+					hr.sline
+					.interior.drop
+						h4.title.ic-interior Interior Color
+							i.ic-plus
+						.hide
+							.checkbox
+								input#in-black(type="checkbox")
+								label.ic-check(for="in-black") Black
+							.checkbox
+								input#in-brown(type="checkbox")
+								label.ic-check(for="in-brown") Brown
+							.checkbox
+								input#in-cream(type="checkbox")
+								label.ic-check(for="in-cream") Cream
+							.checkbox
+								input#in-gray(type="checkbox")
+								label.ic-check(for="in-gray") Gray
+							.checkbox
+								input#in-grey(type="checkbox")
+								label.ic-check(for="in-grey") Grey
+							.checkbox
+								input#in-red(type="checkbox")
+								label.ic-check(for="in-red") Red
+							.checkbox
+								input#in-tan(type="checkbox")
+								label.ic-check(for="in-tan") Tan
+					hr.sline
+					button.clear-all.button(type="rest") Reset all
+			.col-lg-9.col-md-9.col-sm-7.col-xs-6
+				.cars-list
+					.row
+						.col-lg-12.col-md-12.col-sm-12.col-xs-12
+							.dfr
+								p.matches 213 matches
+								.sort.dfr
+									p Sort by:
+									select#sort-item
+										option(value='date_high') Date: newest first
+										option(value='date_low') Date: oldest first
+										option(value='price_low') Price: lower first
+										option(value='price_high') Price: highest first
+										option(value='mileage_low') Mileage: lowest first
+										option(value='mileage_high') Mileage: highest first
+							ul.filter-chosen.dfr
+									li
+										span Biweekly Payment:
+										| $0 - $1,309
+									li
+										span Price:
+										| $0 - $63,888
+					.row
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+						.col-lg-4.col-md-6.col-sm-6.col-xs-12
+							.item
+								.img
+									img(src='img/car.jpg' alt='')
+								.car-meta-top.heading-font
+									.title-wrapper.m-price
+										h4.car-title 2019 | Subaru | Crosstrek | Sport H-4 cyl
+										.price
+											p.monthly-price $275.23
+												span biweekly
+											.price.discounted-price
+									.carnance-price-wrapper
+										p.mileage 50 614 km
+										p.normal-price $27,999.00
+								a.link(href='#')
+					.row
+						.col-lg-12.col-md-12.col-sm-12.col-xs-12
+							.wp-pagenavi
+								span.pages Page 2 of 94
+								a.previouspostslink(rel='prev' href='#') Previous Page
+								a.page.smaller(title='Page 1' href='#') 1
+								span.current(aria-current='page') 2
+								a.page.larger(title='Page 3' href='#') 3
+								span.extend ...
+								a.nextpostslink(rel='next' href='#') Next Page
+								a.last(href='#') 94

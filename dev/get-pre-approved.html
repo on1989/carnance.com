@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Pug Page</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/slick-theme.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/select2.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet">
+    <link href="jwa_cars_listings/assets/css/presets/style-5.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://carnance.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.21">
+    <link rel="stylesheet" href="https://carnance.com/wp-content/plugins/gravityforms/css/datepicker.min.css?ver=2.4.21">
+    <link rel="stylesheet" href="https://carnance.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.21">
+    <style>
+      .top-head:after{
+      	background-image: -webkit-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	background-image: -ms-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+      	content: '';
+      	display: block;
+      	position: absolute;
+      	left: 0px;
+      	top: 40px;
+      	width: 100%;
+      	height: 70px;
+      	z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr">
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">ONLINE FINANCING</a></li>
+                </ul><a class="tel dfr icon-phone" href="tel:+1 866-416-6240">+1 866-416-6240</a>
+                <ul class="soc dfr">
+                  <li class="icon-facebook"><a href="#">facebook</a></li>
+                  <li class="icon-twitter"><a href="#">twitter</a></li>
+                  <li class="icon-instagram"><a href="#">instagram</a></li>
+                  <li class="icon-linkedin"><a href="#">linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="dfr"><a class="logo" href="#">
+                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 223 29">
+                    <path class="st1" d="M6.6,17.2v-4.9c0-3.7,3-6.7,6.7-6.7h0.7L16.3,0h-4.8C5.1,0,0,5.2,0,11.5v5.8c0,6.3,5.1,11.4,11.4,11.4h12.1								v-4.9H13.3C9.6,23.9,6.6,20.9,6.6,17.2z"></path>
+                    <path class="st1" d="M19.4,0l-2.3,5.6h4.5L23.8,0H19.4z"></path>
+                    <path class="st1" d="M29.4,0H27l-2.3,5.6h4.8h2.3L34.1,0H29.4z"></path>
+                    <path class="st2" d="M16.9,18.4l0.4-0.7l2.9-5l2.8-4.8c0.1-0.2-0.2-0.4-0.3-0.3L18,10.7l-4.8,3.2l-0.6,0.4c0,0-0.1,0.1-0.1,0.1								c-1,1-0.8,2.8,0.4,3.9c1.2,1.1,3,1.2,3.9,0.2C16.8,18.5,16.8,18.4,16.9,18.4z"></path>
+                    <path class="st1" d="M44.4,0H38l-2.4,5.7H41l4.3,11h-8.5H31l-5,12h6.3l2.6-6.8h12.4l2.6,6.8h6.7L44.4,0z"></path>
+                    <path class="st2" d="M105.8,0h5.4v28.8h-3.4v0L92.8,9.4v19.4h-5.4V0h4.4l14.1,17.8L105.8,0L105.8,0z"></path>
+                    <path class="st2" d="M166.9,0h5.4v28.8H169v0L153.9,9.4v19.4h-5.4V0h4.4l14.1,17.8L166.9,0L166.9,0z"></path>
+                    <path class="st2" d="M132.8,0h-5.9l-2.7,6h5.7l5.3,12.2h-10.7h-5.8L114,28.8h5.9l2.5-5.4h15l2.4,5.4h5.9L132.8,0z"></path>
+                    <path class="st2" d="M206.9,17h15.5v-5.1h-15.5h-5.4c0,5.6,0,11.3,0,16.9H223v-5.3h-16.1L206.9,17L206.9,17z"></path>
+                    <path class="st2" d="M201.5,0.1c0,1.8,0,3.5,0,5.3h5.4H223V0.1H201.5z"></path>
+                    <path class="st1" d="M77.7,16.8c2-0.5,3.5-1.4,4.4-2.9c0.9-1.5,1.4-3.2,1.4-5.2c0-0.2,0-0.4,0-0.6c0-0.2,0-0.4,0-0.6								c-0.1-1-0.3-1.9-0.7-2.9c-0.4-0.9-0.9-1.7-1.6-2.4c-0.8-0.8-1.7-1.3-2.8-1.6c-1.1-0.3-2.1-0.5-3.2-0.5c-0.3,0-0.6,0-0.9,0								c-0.3,0-0.6,0-0.9,0H58.6v5.1h6H72v0c1.4,0,2.6,0.2,3.7,0.5c1.1,0.3,1.7,1.4,1.7,3.1c0,1.7-0.5,2.7-1.5,3.1								c-1.1,0.4-2.2,0.6-3.5,0.6c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0h-7.4h-6v16.3h6V17.4h7.1L78,28.7h6.8L77.7,16.8z"></path>
+                    <path class="st2" d="M183.2,7.9c-0.9,1.9-1.3,4.1-1.4,6.6c0,0.4,0,0.9,0,1.3s0,0.9,0,1.3c0.1,0.9,0.3,1.8,0.5,2.7								c0.3,0.9,0.7,1.7,1.3,2.4c0.6,0.7,1.4,1.2,2.2,1.3c0.8,0.2,1.7,0.3,2.6,0.3c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0l9.9,0v5h-10.2								c-1.6,0-3.2-0.1-4.7-0.4c-1.5-0.3-2.9-1-4.2-2c-1.6-1.3-2.7-2.9-3.4-4.8c-0.6-1.9-1-3.8-1-5.8c0-0.4,0-0.8,0-1.2								c0-0.4,0-0.8,0.1-1.2c0.3-4.5,1.5-7.9,3.7-10c2.2-2.1,5.4-3.2,9.8-3.2l10,0V5h-9.9C185.9,5,184,6,183.2,7.9z"></path>
+                  </svg></a>
+                <div class="burger"><span></span><span></span><span></span></div>
+                <ul class="menu dfr">
+                  <li><a href="#">Search Cars</a></li>
+                  <li><a href="#">Online Financing</a></li>
+                  <li class="button"><a href="#">Get Pre-Approved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="banner-mini" style="background-image:url(https://thompson.justwebagency.com/carnance-v2/wp-content/themes/JWACarnance/assets/img/title-box-default-bg.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="title">Get Pre-Approved</h1>
+              <div class="breadcrumbs">
+                <!-- Breadcrumb NavXT 6.6.0--><span property="itemListElement" typeof="ListItem"><a class="home" property="item" typeof="WebPage" title="Go to Carnance." href="https://thompson.justwebagency.com/carnance-v2"><span property="name">Carnance</span></a>
+                  <meta property="position" content="1"></span> ><span property="itemListElement" typeof="ListItem"><span class="post post-page current-item" property="name">Get Pre-Approved</span>
+                  <meta property="url" content="https://thompson.justwebagency.com/carnance-v2/get-pre-approved/">
+                  <meta property="position" content="2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="container">
+          <div class="row dfr">
+            <div class="vc_row wpb_row vc_row-fluid">
+              <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12 vc_col-xs-12">
+                <div class="vc_column-inner">
+                  <div class="wpb_wrapper">
+                    <div class="gf_browser_gecko gform_wrapper" id="gform_wrapper_3">
+                      <div class="gform_anchor" id="gf_3" tabindex="-1"></div>
+                      <form id="gform_3" method="post" enctype="multipart/form-data" target="gform_ajax_frame_3" action="/carnance-v2/get-pre-approved/#gf_3">
+                        <div class="gform_heading"><span class="gform_description"></span></div>
+                        <div class="gf_progressbar_wrapper" id="gf_progressbar_wrapper_3">
+                          <p class="gf_progressbar_title">Step<span class="gf_step_current_page">1</span> of<span class="gf_step_page_count">11</span></p>
+                          <div class="gf_progressbar gf_progressbar_custom" aria-hidden="true">
+                            <div class="gf_progressbar_percentage percentbar_custom percentbar_9" style="width:9%; color:; background-color:#f26b36;"><span>9%</span></div>
+                          </div>
+                        </div>
+                        <div class="gform_body gform-body">
+                          <div class="gform_page form-page form-one" id="gform_page_3_1">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3">
+                                <div class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_89">
+                                  <input class="gform_hidden" id="input_3_89" name="input_89" type="hidden" aria-invalid="false" value="">
+                                </div>
+                                <div class="gfield gravity_inner_input gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_87">
+                                  <label class="gfield_label" for="input_3_87">First Name<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_87" name="input_87" type="text" value="" aria-required="true" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield gravity_inner_input gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_88">
+                                  <label class="gfield_label" for="input_3_88">Last Name<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_88" name="input_88" type="text" value="" aria-required="true" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield gravity_inner_input gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_9">
+                                  <label class="gfield_label" for="input_3_9">Phone<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                  <div class="ginput_container ginput_container_phone">
+                                    <input class="medium" id="input_3_9" name="input_9" type="tel" value="" aria-required="true" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield gravity_inner_input gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_10">
+                                  <label class="gfield_label" for="input_3_10">Email<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                  <div class="ginput_container ginput_container_email">
+                                    <input class="medium" id="input_3_10" name="input_10" type="email" value="" aria-required="true" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield hide gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_67">
+                                  <script>
+                                    if(jQuery('.gravity_inner_input input').length){
+                                    jQuery('.gravity_inner_input input').focus(function(){
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    })
+                                    jQuery('.gravity_inner_input input').blur(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }
+                                    });
+                                    jQuery('.gravity_inner_input input').each(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }else{
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    }
+                                    });
+                                    }
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_next_button button" id="gform_next_button_3_26" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;2&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;2&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-three" id="gform_page_3_2">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_2">
+                                <div class="gfield hide gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_68">
+                                  <h3>What is your current address?</h3>
+                                  <script>
+                                    if(jQuery('.gravity_inner_input input').length){
+                                    jQuery('.gravity_inner_input input').focus(function(){
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    })
+                                    jQuery('.gravity_inner_input input').blur(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }
+                                    });
+                                    jQuery('.gravity_inner_input input').each(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }else{
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    }
+                                    });
+                                    }
+                                  </script>
+                                </div>
+                                <div class="gfield gravity_inner_input field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_34">
+                                  <label class="gfield_label" for="input_3_34">Address</label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_34" name="input_34" type="text" value="" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield gravity_inner_input field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_35">
+                                  <label class="gfield_label" for="input_3_35">City</label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_35" name="input_35" type="text" value="" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield province-select select field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_37">
+                                  <label class="gfield_label" for="input_3_37">Province</label>
+                                  <div class="ginput_container ginput_container_select">
+                                    <select class="medium gfield_select" id="input_3_37" name="input_37" aria-invalid="false">
+                                      <option class="gf_placeholder" value="" selected="selected">Province</option>
+                                      <option value="Ontario">Ontario</option>
+                                      <option value="Quebec">Quebec</option>
+                                      <option value="Other">Other</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="gfield year-select select field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_36">
+                                  <label class="gfield_label" for="input_3_36">Years at Present Address:</label>
+                                  <div class="ginput_container ginput_container_select">
+                                    <select class="medium gfield_select" id="input_3_36" name="input_36" aria-invalid="false">
+                                      <option class="gf_placeholder" value="" selected="selected">Year</option>
+                                      <option value="0.5"><1 Year</option>
+                                      <option value="1">1 Year</option>
+                                      <option value="2">2 Years</option>
+                                      <option value="3">3 Years</option>
+                                      <option value="4">4 Years</option>
+                                      <option value="5">5 Years</option>
+                                      <option value="6">6 Years</option>
+                                      <option value="7">7 Years</option>
+                                      <option value="8">8 Years</option>
+                                      <option value="9">9 Years</option>
+                                      <option value="10">10 Years</option>
+                                      <option value="11">>10 Years</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_64" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;1&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;1&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_64" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;3&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;3&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-four" id="gform_page_3_3">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_3">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_39">
+                                  <script>
+                                    jQuery(".input-figures input").keypress(function(event){
+                                    event = event || window.event;
+                                    if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+                                    return false;
+                                    }
+                                    });
+                                  </script>
+                                  <h3>Home Status:</h3>
+                                </div>
+                                <fieldset class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_38">
+                                  <legend class="gfield_label">Home Status:</legend>
+                                  <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_3_38">
+                                      <div class="gchoice gchoice_3_38_0">
+                                        <input id="choice_3_38_0" name="input_38" type="radio" value="RE" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_0" for="choice_3_38_0">Rent</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_38_1">
+                                        <input id="choice_3_38_1" name="input_38" type="radio" value="OW" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_1" for="choice_3_38_1">Own with mortgage</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_38_2">
+                                        <input id="choice_3_38_2" name="input_38" type="radio" value="OF" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_2" for="choice_3_38_2">Own free & clear</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_38_3">
+                                        <input id="choice_3_38_3" name="input_38" type="radio" value="OM" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_3" for="choice_3_38_3">Own Mobile Home</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_38_4">
+                                        <input id="choice_3_38_4" name="input_38" type="radio" value="PA" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_4" for="choice_3_38_4">Live with parents</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_38_5">
+                                        <input id="choice_3_38_5" name="input_38" type="radio" value="RH" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_5" for="choice_3_38_5">Reserve Housing</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_38_6">
+                                        <input id="choice_3_38_6" name="input_38" type="radio" value="OT" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_38_6" for="choice_3_38_6">Other</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                                <div class="gfield field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_95">
+                                  <label class="gfield_label" for="input_3_95">Monthly Payments:</label>
+                                  <div class="ginput_container ginput_container_number">
+                                    <input class="medium" id="input_3_95" name="input_95" type="number" step="any" value="" placeholder="$" aria-invalid="false" aria-describedby="">
+                                  </div>
+                                </div>
+                                <div class="gfield hide gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_69">
+                                  <script>
+                                    if(jQuery('.gravity_inner_input input').length){
+                                    jQuery('.gravity_inner_input input').focus(function(){
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    })
+                                    jQuery('.gravity_inner_input input').blur(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }
+                                    });
+                                    jQuery('.gravity_inner_input input').each(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }else{
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    }
+                                    });
+                                    }
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_41" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;2&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;2&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_41" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;4&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;4&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-five" id="gform_page_3_4">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_4">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_42">
+                                  <h3>What Is Your Employment Status?</h3>
+                                </div>
+                                <fieldset class="gfield radio-button field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_44">
+                                  <legend class="gfield_label">What Is Your Employment Status?</legend>
+                                  <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_3_44">
+                                      <div class="gchoice gchoice_3_44_0">
+                                        <input id="choice_3_44_0" name="input_44" type="radio" value="FT" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_0" for="choice_3_44_0">Full time</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_1">
+                                        <input id="choice_3_44_1" name="input_44" type="radio" value="FTP" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_1" for="choice_3_44_1">Full Time (Probation)</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_2">
+                                        <input id="choice_3_44_2" name="input_44" type="radio" value="PTC" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_2" for="choice_3_44_2">Part Time (Casual)</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_3">
+                                        <input id="choice_3_44_3" name="input_44" type="radio" value="PTR" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_3" for="choice_3_44_3">Part Time (Regular)</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_4">
+                                        <input id="choice_3_44_4" name="input_44" type="radio" value="RET" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_4" for="choice_3_44_4">Retired</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_5">
+                                        <input id="choice_3_44_5" name="input_44" type="radio" value="SEAS" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_5" for="choice_3_44_5">Seasonal Summer</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_6">
+                                        <input id="choice_3_44_6" name="input_44" type="radio" value="SEAW" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_6" for="choice_3_44_6">Seasonal Winter</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_44_7">
+                                        <input id="choice_3_44_7" name="input_44" type="radio" value="SE" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_44_7" for="choice_3_44_7">Self Employed</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_45" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;3&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;3&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_45" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;5&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;5&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-six" id="gform_page_3_5">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_5">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_46">
+                                  <script>
+                                    jQuery(".input-figures input").keypress(function(event){
+                                    event = event || window.event;
+                                    if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+                                    return false;
+                                    }
+                                    });
+                                    if(jQuery('.gravity_inner_input input').length){
+                                    jQuery('.gravity_inner_input input').focus(function(){
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    })
+                                    jQuery('.gravity_inner_input input').blur(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }
+                                    });
+                                    jQuery('.gravity_inner_input input').each(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }else{
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    }
+                                    });
+                                    }
+                                  </script>
+                                  <h3>Years Employed</h3>
+                                </div>
+                                <div class="gfield gravity_inner_input input-figures field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_47">
+                                  <label class="gfield_label" for="input_3_47">Years</label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_47" name="input_47" type="text" value="" aria-invalid="false">
+                                  </div>
+                                </div>
+                                <div class="gfield gravity_inner_input input-figures field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_48">
+                                  <label class="gfield_label" for="input_3_48">Months</label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_48" name="input_48" type="text" value="" aria-invalid="false">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_49" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;4&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;4&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_49" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;6&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;6&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-seven" id="gform_page_3_6">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_6">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_50">
+                                  <script>
+                                    jQuery(".input-figures input").keypress(function(event){
+                                    event = event || window.event;
+                                    if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+                                    return false;
+                                    }
+                                    });
+                                  </script>
+                                  <h3>Gross Monthly Income:</h3>
+                                </div>
+                                <div class="gfield input-figures field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_51">
+                                  <label class="gfield_label" for="input_3_51">Gross Monthly Income:</label>
+                                  <div class="ginput_container ginput_container_text">
+                                    <input class="medium" id="input_3_51" name="input_51" type="text" value="" placeholder="$" aria-invalid="false">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_52" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;5&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;5&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_52" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;7&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;7&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-eight" id="gform_page_3_7">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_7">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_53">
+                                  <h3>Have You Declared Bankruptcy In the Last 7 Years?</h3>
+                                </div>
+                                <fieldset class="gfield radio-button field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_54">
+                                  <legend class="gfield_label">Have You Declared Bankruptcy In the Last 7 Years?</legend>
+                                  <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_3_54">
+                                      <div class="gchoice gchoice_3_54_0">
+                                        <input id="choice_3_54_0" name="input_54" type="radio" value="false" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_54_0" for="choice_3_54_0">No</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_54_1">
+                                        <input id="choice_3_54_1" name="input_54" type="radio" value="true" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_54_1" for="choice_3_54_1">Yes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_55" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;6&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;6&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_55" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;8&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;8&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-nine" id="gform_page_3_8">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_8">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_56">
+                                  <h3>Is a Cosigner available if needed?</h3>
+                                </div>
+                                <fieldset class="gfield radio-button field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_57">
+                                  <legend class="gfield_label">Is a Cosigner available if needed?</legend>
+                                  <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_3_57">
+                                      <div class="gchoice gchoice_3_57_0">
+                                        <input id="choice_3_57_0" name="input_57" type="radio" value="false" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_57_0" for="choice_3_57_0">No</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_57_1">
+                                        <input id="choice_3_57_1" name="input_57" type="radio" value="true" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_57_1" for="choice_3_57_1">Yes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_58" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;7&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;7&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_58" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;9&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;9&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-ten" id="gform_page_3_9">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_9">
+                                <div class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_59">
+                                  <script>
+                                    jQuery(".input-figures input").keypress(function(event){
+                                    event = event || window.event;
+                                    if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+                                    return false;
+                                    }
+                                    });
+                                    if(jQuery('.gravity_inner_input input').length){
+                                    jQuery('.gravity_inner_input input').focus(function(){
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    })
+                                    jQuery('.gravity_inner_input input').blur(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }
+                                    });
+                                    jQuery('.gravity_inner_input input').each(function(){
+                                    if(jQuery(this).val().length == 0){
+                                    jQuery(this).parents('.gravity_inner_input').removeClass('focus')
+                                    }else{
+                                    jQuery(this).parents('.gravity_inner_input').addClass('focus')
+                                    }
+                                    });
+                                    }
+                                  </script>
+                                  <h3>Do you intend to put down payment?</h3>
+                                </div>
+                                <fieldset class="gfield radio-button field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_60">
+                                  <legend class="gfield_label">Do you intend to put down payment?</legend>
+                                  <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_3_60">
+                                      <div class="gchoice gchoice_3_60_0">
+                                        <input id="choice_3_60_0" name="input_60" type="radio" value="No" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_60_0" for="choice_3_60_0">No</label>
+                                      </div>
+                                      <div class="gchoice gchoice_3_60_1">
+                                        <input id="choice_3_60_1" name="input_60" type="radio" value="Yes" onchange="gformToggleRadioOther( this )">
+                                        <label id="label_3_60_1" for="choice_3_60_1">Yes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                                <div class="gfield field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_94">
+                                  <label class="gfield_label" for="input_3_94">Down payment</label>
+                                  <div class="ginput_container ginput_container_number">
+                                    <input class="medium" id="input_3_94" name="input_94" type="number" step="any" value="" placeholder="$" aria-invalid="false" aria-describedby="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_91" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;8&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;8&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_91" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;10&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;10&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-eleven" id="gform_page_3_10">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_10">
+                                <div class="gfield gravity_inner_input field_sublabel_below field_description_below gfield_visibility_visible" id="field_3_93">
+                                  <label class="gfield_label" for="input_3_93">Date of Birth</label>
+                                  <div class="ginput_container ginput_container_date">
+                                    <input class="datepicker medium ymd_dash datepicker_no_icon gdatepicker-no-icon" id="input_3_93" name="input_93" type="text" value="" aria-describedby="input_3_93_date_format'" aria-invalid="false">
+                                    <div class="gfield_date_format" aria-hidden="true">Date Format: yyyy-mm-dd</div><span class="screen-reader-text" id="input_3_93_date_format">Date Format: YYYY dash MM dash DD</span>
+                                  </div>
+                                  <input class="gform_hidden" id="gforms_calendar_icon_input_3_93" type="hidden" value="https://thompson.justwebagency.com/carnance-v2/wp-content/plugins/gravityforms/images/datepicker/datepicker.svg">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer">
+                              <input class="gform_previous_button button" id="gform_previous_button_3_92" type="button" value="← Back" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;9&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;9&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                              <input class="gform_next_button button" id="gform_next_button_3_92" type="button" value="Continue" onclick="jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;11&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_3&quot;).val(&quot;11&quot;);  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); } ">
+                            </div>
+                          </div>
+                          <div class="gform_page form-twelve" id="gform_page_3_11">
+                            <div class="gform_page_fields">
+                              <div class="gform_fields top_label form_sublabel_below description_below" id="gform_fields_3_11">
+                                <fieldset class="gfield checkbox gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible" id="field_3_63">
+                                  <legend class="gfield_label screen-reader-text gfield_label_before_complex"><span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></legend>
+                                  <div class="ginput_container ginput_container_checkbox">
+                                    <div class="gfield_checkbox" id="input_3_63">
+                                      <div class="gchoice gchoice_3_63_1">
+                                        <input id="choice_3_63_1" name="input_63.1" type="checkbox" value="I consent to receive electronic messages to my email address and mobile phone number (message and data rates may apply) from CarNance regarding CarNance products, services and related offerings. You may withdraw your consent at any time by using an unsubscribe mechanism in an electronic message sent by CarNance.">
+                                        <label id="label_3_63_1" for="choice_3_63_1">I consent to receive electronic messages to my email address and mobile phone number (message and data rates may apply) from CarNance regarding CarNance products, services and related offerings. You may withdraw your consent at any time by using an unsubscribe mechanism in an electronic message sent by CarNance.</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="gform_page_footer top_label">
+                              <input class="gform_previous_button button" id="gform_previous_button_3" type="submit" value="← Back" onclick="if(window[&quot;gf_submitting_3&quot;]){return false;}  if( !jQuery(&quot;#gform_3&quot;)[0].checkValidity || jQuery(&quot;#gform_3&quot;)[0].checkValidity()){window[&quot;gf_submitting_3&quot;]=true;}  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_3&quot;]){return false;} if( !jQuery(&quot;#gform_3&quot;)[0].checkValidity || jQuery(&quot;#gform_3&quot;)[0].checkValidity()){window[&quot;gf_submitting_3&quot;]=true;}  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); }">
+                              <input class="gform_button button" id="gform_submit_button_3" type="submit" value="Submit" onclick="if(window[&quot;gf_submitting_3&quot;]){return false;}  if( !jQuery(&quot;#gform_3&quot;)[0].checkValidity || jQuery(&quot;#gform_3&quot;)[0].checkValidity()){window[&quot;gf_submitting_3&quot;]=true;}  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_3&quot;]){return false;} if( !jQuery(&quot;#gform_3&quot;)[0].checkValidity || jQuery(&quot;#gform_3&quot;)[0].checkValidity()){window[&quot;gf_submitting_3&quot;]=true;}  jQuery(&quot;#gform_3&quot;).trigger(&quot;submit&quot;,[true]); }">
+                              <input type="hidden" name="gform_ajax" value="form_id=3&amp;title=&amp;description=1&amp;tabindex=0">
+                              <input class="gform_hidden" type="hidden" name="is_submit_3" value="1">
+                              <input class="gform_hidden" type="hidden" name="gform_submit" value="3">
+                              <input class="gform_hidden" type="hidden" name="gform_unique_id" value="">
+                              <input class="gform_hidden" type="hidden" name="state_3" value="WyJbXSIsIjA0NDFjZjFmNTQ0YzM1NTMxMTk4YThlOWZlNjY1YjJlIl0=">
+                              <input class="gform_hidden" id="gform_target_page_number_3" type="hidden" name="gform_target_page_number_3" value="2">
+                              <input class="gform_hidden" id="gform_source_page_number_3" type="hidden" name="gform_source_page_number_3" value="1">
+                              <input type="hidden" name="gform_field_values" value="">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <iframe id="gform_ajax_frame_3" style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_3" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+                    <script type="text/javascript">document.addEventListener( 'DOMContentLoaded', function($){gformInitSpinner( 3, 'https://thompson.justwebagency.com/carnance-v2/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery('#gform_ajax_frame_3').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_3').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_3').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_3').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_3').val();gformInitSpinner( 3, 'https://thompson.justwebagency.com/carnance-v2/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_3').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_3').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [3]);window['gf_submitting_3'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());}, 50);}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [3, current_page]);} );} );</script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="dfr">
+              <ul class="menu">
+                <li><a href="#">Browse Inventory</a></li>
+                <li><a href="#">Online Financing</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              <ul class="contacts">
+                <li class="ic-phone"><a href="#">+1 866-416-6240</a></li>
+                <li class="ic-mail"><a href="#">support@carnance.ca</a></li>
+                <li class="ic-location"><a href="#">111 Buttermill Ave Unit #2, Concord, ON L4K 3X5</a></li>
+                <li class="ic-clock">
+                  <p>Hours of operation:<br><b>Mon – Fri:</b> 09:00AM – 09:00PM<br><b>Saturday:</b> 09:00AM – 07:00PM<br><b>Sunday:</b> Closed</p>
+                </li>
+              </ul>
+              <div class="logos">
+                <p>Proud member of</p>
+                <ul>
+                  <li><img src="img/logo-bbb.png" alt=""></li>
+                  <li><img src="img/logo-omvic.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright-block dfr">
+              <p>Copyright © 2020 Carnance Inc.</p>
+              <ul class="soc dfr">
+                <li class="ic-linkedin"><a href="">Linkedin</a></li>
+                <li class="ic-facebook"><a href="">Facebook</a></li>
+                <li class="ic-instagram"><a href="">Instagram</a></li>
+                <li class="ic-twitter"><a href="">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/build.js"></script>
+    <script src="jwa_cars_listings/assets/js/ion.rangeSlider.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.fancybox.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/select2.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/slick.min.js"></script>
+    <script src="jwa_cars_listings/assets/js/main.js"></script>
+    <script src="jwa_cars_listings/assets/js/jquery.IncrementBox.js"></script>
+    <script>
+      $('.radius').IncrementBox({
+      	timeout: 75,
+      	cursor: true,
+      });
+      $(".radius-num").keypress(function(event){
+      	event = event || window.event;
+      	if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+      		return false;
+      	}
+      });
+    </script>
+  </body>
+</html>

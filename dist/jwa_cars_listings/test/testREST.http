@@ -1,0 +1,114 @@
+POST https://thompson.justwebagency.com/get-auto/wp-json/jwa-cars-listing/v1/cars/
+Content-Type: application/json
+
+{
+  "token": "t6u3dJ3D6AY5eu5R5Rix",
+  "title": "BMW",
+  "carStatus": "publish",
+  "vin": "jhfdauy72367bjbdssdjjsd",
+  "carStockNumber": "323223",
+  "cityMpg": "23",
+  "highwayMpg": "11",
+  "carMark": "BMW",
+  "carModel": "M5",
+  "carTrim": "",
+  "bodyType": "Sedan",
+  "fuelType": "Gas",
+  "carYear": "2019",
+  "carMileage": 29911,
+  "horsePower": "331",
+  "carEngine": "2.4 L",
+  "transmission": "Manual",
+  "interiorColor": "Black",
+  "exteriorColor": "White",
+  "airbagNum": 3,
+  "seatingNum": 4,
+  "doorsNum": 4,
+  "price": [
+    {
+      "regular": 34002
+    },
+    {
+      "sales": 32880
+    }
+  ],
+  "gallery": [
+    "https://carnance.com/wp-content/uploads/pic-47ee9ec7c4b6673d3c01ca0a8192ac9e-e1604924770973-798x466.jpg"
+  ],
+  "dealer": [
+    {
+      "city": "Toronto"
+    },
+    {
+      "postal_code": "NO 638"
+    },
+    {
+      "province": "Ontario"
+    },
+    {
+      "address": "111 Buttermill Ave Unit #2, Concord, ON L4K 3X5"
+    },
+    {
+      "dealerName": "carnance"
+    }
+  ]
+}
+
+####
+POST https://thompson.justwebagency.com/get-auto/wp-json/jwa-cars-listing/v1/cars/33171
+Content-Type: application/json
+
+{
+  "ID": 33171,
+  "token": "t6u3dJ3D6AY5eu5R5Rix",
+  "status": "publish",
+  "carMark": "Dodge",
+  "carModel": "Ram",
+  "carTrim": "2500"
+}
+
+###
+
+GET https://pictures.dealer.com/l/leonsfinecars/1185/116ce51f76cfcbf42426d3222261b5d7x.jpg
+
+###
+
+
+POST https://autoapprove.ca/wp-json/jwa-cars-listing/v1/cars/
+Content-Type: application/json
+
+{
+  "id": 3759,
+  "car_id": "",
+  "title": "Audi",
+  "vin": "WA1UFCFL1FA005482",
+  "carStockNumber": "DB-005482",
+  "cityMpg": "21L/100Km",
+  "highwayMpg": "30L/100Km",
+  "carMark": "Audi",
+  "carModel": "A4 allroad",
+  "carTrim": "2.0T Progressiv Navigation. Rear Camera. Panoramic 2.0L I-4 cyl",
+  "carYear": "2015",
+  "bodyType": "Wagon",
+  "fuelType": "Gas",
+  "carMileage": 202000,
+  "exteriorColor": "Grey",
+  "interiorColor": "Black",
+  "carEngine": "2.0L I-4 cyl",
+  "price": [
+    {
+      "regular": 12950
+    }
+  ],
+  "gallery": [
+    "https://pictures.dealer.com/l/leonsfinecars/1377/c3f37c1d5d49b4326c9d98b578ef2e97x.jpg",
+    "https://pictures.dealer.com/l/leonsfinecars/1359/7de8a6ff646a656a171385f5915579cex.jpg",
+    "https://pictures.dealer.com/l/leonsfinecars/1251/ccd1e93fd6e35b48f7373053e717da0cx.jpg",
+    "https://pictures.dealer.com/l/leonsfinecars/0763/3b8fd02ee53be6bbbd5fe58b813eccbcx.jpg",
+    "https://pictures.dealer.com/l/leonsfinecars/1760/68123a4e6e2c0c5a27e42c98b95b8b52x.jpg"
+  ],
+  "transmission": "Automatic",
+  "carStatus": "publish",
+  "doorsNum": 4,
+  "token": "p6WoCKt6AbBqZrpCmUMf"
+}

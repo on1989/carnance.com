@@ -1,0 +1,174 @@
+/**
+custom-icons Webfont
+*/
+
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('../fonts/GOTHIC.ttf');
+    src: url('../fonts/GOTHIC-icons.eot') format('embedded-opentype'), url('../fonts/GOTHIC-icons.woff2') format('woff2'), url('../fonts/customGOTHICicons.woff') format('woff'), url('../fonts/GOTHIC-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'custom-icons';
+    src: url('../fonts/custom-icons.eot?1629195845426');
+    src: url('../fonts/custom-icons.eot?#iefix-1629195845426') format('embedded-opentype'), url('../fonts/custom-icons.woff2?1629195845426') format('woff2'), url('../fonts/custom-icons.woff?1629195845426') format('woff'), url('../fonts/custom-icons.ttf?1629195845426') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+    font-family: 'custom-icons';
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    font-size: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+Glyphs list
+*/
+
+.icon-author:before {
+        content: '\ea01';
+    }
+    .icon-biweekly:before {
+        content: '\ea02';
+    }
+    .icon-body-type:before {
+        content: '\ea03';
+    }
+    .icon-calendar:before {
+        content: '\ea04';
+    }
+    .icon-check:before {
+        content: '\ea05';
+    }
+    .icon-clear:before {
+        content: '\ea06';
+    }
+    .icon-clock:before {
+        content: '\ea07';
+    }
+    .icon-coupe:before {
+        content: '\ea08';
+    }
+    .icon-drivetrain:before {
+        content: '\ea09';
+    }
+    .icon-engine:before {
+        content: '\ea0a';
+    }
+    .icon-exterior:before {
+        content: '\ea0b';
+    }
+    .icon-facebook:before {
+        content: '\ea0c';
+    }
+    .icon-fuel:before {
+        content: '\ea0d';
+    }
+    .icon-info:before {
+        content: '\ea0e';
+    }
+    .icon-instagram:before {
+        content: '\ea0f';
+    }
+    .icon-interior:before {
+        content: '\ea10';
+    }
+    .icon-left-arrow:before {
+        content: '\ea11';
+    }
+    .icon-left:before {
+        content: '\ea12';
+    }
+    .icon-linkedin:before {
+        content: '\ea13';
+    }
+    .icon-location:before {
+        content: '\ea14';
+    }
+    .icon-mail:before {
+        content: '\ea15';
+    }
+    .icon-make:before {
+        content: '\ea16';
+    }
+    .icon-message:before {
+        content: '\ea17';
+    }
+    .icon-mileage:before {
+        content: '\ea18';
+    }
+    .icon-minus:before {
+        content: '\ea19';
+    }
+    .icon-model:before {
+        content: '\ea1a';
+    }
+    .icon-next-slide:before {
+        content: '\ea1b';
+    }
+    .icon-phone:before {
+        content: '\ea1c';
+    }
+    .icon-plus:before {
+        content: '\ea1d';
+    }
+    .icon-prev-slide:before {
+        content: '\ea1e';
+    }
+    .icon-price:before {
+        content: '\ea1f';
+    }
+    .icon-quote:before {
+        content: '\ea20';
+    }
+    .icon-reset:before {
+        content: '\ea21';
+    }
+    .icon-right-arrow:before {
+        content: '\ea22';
+    }
+    .icon-right:before {
+        content: '\ea23';
+    }
+    .icon-search:before {
+        content: '\ea24';
+    }
+    .icon-sedan:before {
+        content: '\ea25';
+    }
+    .icon-share:before {
+        content: '\ea26';
+    }
+    .icon-suv:before {
+        content: '\ea27';
+    }
+    .icon-transmission:before {
+        content: '\ea28';
+    }
+    .icon-transmisson:before {
+        content: '\ea29';
+    }
+    .icon-truck:before {
+        content: '\ea2a';
+    }
+    .icon-twitter:before {
+        content: '\ea2b';
+    }
+    .icon-van:before {
+        content: '\ea2c';
+    }

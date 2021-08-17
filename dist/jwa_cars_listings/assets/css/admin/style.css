@@ -1,0 +1,24 @@
+/*start*/
+#location [class*="col-"],
+#details [class*="col-"],
+#price [class*="col-"]{
+	margin-bottom: 30px;
+}
+#jwaTabs{
+	margin-bottom: 30px;
+}
+#gallery #image-wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#gallery #image-wrapper img{
+	width: 100% !important;
+}
+#gallery #image-wrapper [class*="col-"]{
+	margin-bottom: 30px;
+}

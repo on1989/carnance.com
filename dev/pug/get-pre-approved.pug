@@ -1,0 +1,58 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Test Pug Page
+		link(href="css/main.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/slick.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/slick-theme.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/select2.min.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/jquery.fancybox.min.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/ion.rangeSlider.min.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/style-car.css" rel="stylesheet")
+		link(href="jwa_cars_listings/assets/css/presets/style-5.css" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet")
+		link(rel="stylesheet", href="https://carnance.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.21")
+		link(rel="stylesheet", href="https://carnance.com/wp-content/plugins/gravityforms/css/datepicker.min.css?ver=2.4.21")
+		link(rel="stylesheet", href="https://carnance.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.21")
+		style.
+			.top-head:after{
+				background-image: -webkit-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+				background-image: -ms-linear-gradient(90deg, rgba(26, 44, 51, 0) 0%, rgba(26, 44, 51, 0.50196) 100%);
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0px;
+				top: 40px;
+				width: 100%;
+				height: 70px;
+				z-index: 1;
+			}
+	body
+		include layout/header.pug
+		include layout/get-pre-approved-content.pug
+		include layout/footer.pug
+		script(src="js/jquery-2.1.4.min.js")
+		script(src="js/build.js")
+		script(src="jwa_cars_listings/assets/js/ion.rangeSlider.min.js")
+		script(src="jwa_cars_listings/assets/js/jquery.fancybox.min.js")
+		script(src="jwa_cars_listings/assets/js/select2.min.js")
+		script(src="jwa_cars_listings/assets/js/slick.min.js")
+		script(src="jwa_cars_listings/assets/js/main.js")
+		script(src="jwa_cars_listings/assets/js/jquery.IncrementBox.js")
+		script.
+			$('.radius').IncrementBox({
+				timeout: 75,
+				cursor: true,
+			});
+			$(".radius-num").keypress(function(event){
+				event = event || window.event;
+				if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) ){
+					return false;
+				}
+			});
+

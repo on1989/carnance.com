@@ -1,0 +1,16 @@
+{
+    "name": "lovik/jwa_cars_listings",
+    "type": "project",
+    "authors": [
+        {
+            "name": "AlsconWeb",
+            "email": "alsconweb_alex@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "JWA\\Car\\": "includes/"
+        }
+    }
+}

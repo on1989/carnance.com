@@ -1,0 +1,79 @@
+.filters .jwa_button,
+.filters .filter-button,
+.cars-list .vc_btn3,
+.cars .jwa_button,
+.car .jwa_button{
+	min-width: 270px;
+	height: 50px;
+	background: #EF9021;
+	border: 2px solid  #EF9021;
+	border-radius: 4px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	font-weight: 600;
+	font-size: 16px;
+	color: #2F2F2F;
+	transition: all 0.3s ease;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.filters .filter-button{
+	color: #fff;
+}
+.filters .filter-button:hover,
+.cars-list .vc_btn3:hover,
+.cars .jwa_button:hover,
+.car .jwa_button:hover{
+	background: #DB7600 !important;
+	border-color: #DB7600 !important;
+}
+.filters .jwa_button.transparent,
+.cars .jwa_button.transparent{
+	color: #0C0B36;
+	background-color: transparent !important;
+	border-color: transparent;
+}
+.filters .jwa_button.transparent:hover,
+.cars .jwa_button.transparent:hover {
+    color: #DB7600;
+}
+.cars .jwa_button{
+	width: 100% !important;
+	min-width: 0;
+	height: 63px;
+	margin: 20px 0;
+	width: 100%;
+	color: #fff;
+}
+.car .description-block .jwa_button {
+    width: 100%;
+    height: 64px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+	max-width: 300px
+}
+.additional-block a{
+	color: #EF9021;
+}
+.additional-block a:hover{
+	color: #DB7600;
+}
+.additional-block blockquote{
+	border: 3px solid #EF9021;
+}
+.additional-block blockquote:after,
+.additional-block blockquote:before{
+	color: #EF9021;
+}
+.additional-block ul li:before{
+	background: #EF9021;
+}
